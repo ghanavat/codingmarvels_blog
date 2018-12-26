@@ -1,1 +1,1 @@
-# codingmarvels_blog
+# Coding Marvels
