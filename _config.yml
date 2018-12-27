@@ -13,7 +13,7 @@
 # you will see them accessed via {{ site.title }}, {{ site.email }}, and so on.
 # You can create any custom variable you would like, and they will be accessible
 # in the templates via {{ site.myvariable }}.
-title: Coding Marvels
+title: Contact me
 email: Coming soon...
 description: >- # this means to ignore newlines until "baseurl:"
   Coding marvels is my personal blog and I will be focusing on WebAssembly and mostly Blazor! Have you heard of Blazor? No? Yes? Doesn’t matter if the answer is yes or no. We’re gonna have a lot of fun together and we will figure out exciting stuff as we go along, which will help this blog to evolve and give values to others.
