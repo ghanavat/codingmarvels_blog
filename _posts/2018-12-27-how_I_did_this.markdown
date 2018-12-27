@@ -5,7 +5,7 @@ date:   2018-12-27 21:35:00 +0000
 categories: this
 ---
 
-I have been thinking of creating my own blog for more than it needed. Part of the problem was the complication. I needed something quick. Something that I could quickly share my ideas and opinions, as soon as I wrote them. Currently there are countless number of services which provide an environment where you can create and setup your website/blog. I am not going to mention their brands obviously (some of them are great to be fair). But there are far more time consuming that I was scheduling it for.
+I have been thinking of creating my own blog for more than it needed. Part of the problem was the complication. I needed something quick. Something that I could quickly share my ideas and opinions, as soon as I wrote them. Currently there are countless number of services which provide an environment where you can create and setup your website/blog. I am not going to mention their brands obviously (some of them are great to be fair). But there are far more time consuming that I was planning for.
 
 I started to investigate it thoroughly and talked to my friends and some of my culleagues who I trust that they wil never steal my idea(s) that I was sharing with them! As soon as I said **bbbbllog**! I have started to learn a lot. I have put everything on the table, my investigation outcome, friends solutions, everything. Came up with a single solution. That solution is what you are visiting now. A quick and hassle free blog that works like a charm. I write my post and able to upload it comfortably. I mean it won't get any easier than this, trust me!
 
