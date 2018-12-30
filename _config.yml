@@ -31,8 +31,20 @@ plugins:
 emptyArray: []
 
 comments:
-  receiver: https://{{codingmarvels.com}}/api/PostComment}}
-  
+  receiver: https://{{codingmarvels.com/api/PostComment}}
+    
+  defaults:
+  -
+  values:
+      layout: post
+      author: saeedG
+      commenting: open
+  authors:
+    saeedG:
+        name: Saeed Ghanavat
+        email:
+        url: https://codingmarvels.com
+        
 # Exclude from processing.
 # The following items will not be processed, by default. Create a custom list
 # to override the default setting.
