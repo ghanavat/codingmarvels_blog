@@ -6,11 +6,10 @@ categories: welcome
 commenting: open
 
 authors:
----
-saeedG:
-	name: Saeed Ghanavat
-	url: https://codingmarvels.com
-	email:
+	saeedG:
+		name: Saeed Ghanavat
+		url: https://codingmarvels.com
+		email:
 
 Hello, thanks for visiting my blog. I know it's pretty quiet here at the moment. This is because I am setting up the gears and putting up things where their should be.
 
