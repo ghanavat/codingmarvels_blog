@@ -11,7 +11,7 @@ I started to investigate it thoroughly and talked to my friends and some of my c
 
 What is that single solution then? What about hosting it? What about the domain? Keep reading please...
 
-Once I have found how to design my blog with the ability to upload my posts as quickly as humanly, no sorry, as quickly as technologically possible, I started bothering my nevers and gray cells with how my blog should look like. Then I miraculously flashed myself back in time (for you it's the first paragraph above) and reminded myself on how I wanted my blog to be done originally. Yesss, something quick and hassle free, so how it should look like isn't the priority, let's move one then. But don't be disappointed just yet. My single shiny solution has a theme I can choose. Yayyy!!!
+Once I have found how to design my blog with the ability to upload my posts as quickly as humanly, no sorry, as quickly as technologically possible, I started bothering my nevers and gray cells with how my blog should look like. Then I miraculously flashed myself back in time (for you it's the first paragraph above) and reminded myself on how I wanted my blog to be done originally. Yesss, something quick and hassle free, so how it should look like isn't the priority, let's move on then. But don't be disappointed just yet. My single shiny solution has a theme I can choose!
 
 This particular solution I have been buzzing about also helped me to host my blog, again, hassle free. Just needed to tweak some DNS settings on my domain registrar account dashboard, in order to wire up my blog to my domain.
 
