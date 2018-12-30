@@ -35,10 +35,22 @@ comments:
     
   defaults:
   -
+  scope:
+      path: ''
+      type: pages
+    values:
+      layout: page
+      author: saeedG
+      commenting: open
+  -
+  scope:
+      path: '_posts'
+      type: posts
   values:
       layout: post
       author: saeedG
       commenting: open
+  -
   authors:
     saeedG:
         name: Saeed Ghanavat
