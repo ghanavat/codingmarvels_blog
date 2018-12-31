@@ -33,29 +33,29 @@ emptyArray: []
 #comments:
   #receiver: https://{{codingmarvels.com}}/api/PostComment}}
     
-  defaults:
-  -
-  scope:
-      path: ''
-      type: pages
-    values:
-      layout: page
-      author: saeedG
-      commenting: open
-  -
-  scope:
-      path: '_posts'
-      type: posts
-  values:
-      layout: post
-      author: saeedG
-      commenting: open
-  -
-  authors:
-    saeedG:
-        name: Saeed Ghanavat
-        email:
-        url: https://codingmarvels.com
+  # defaults:
+  # -
+  # scope:
+      # path: ''
+      # type: pages
+    # values:
+      # layout: page
+      # author: saeedG
+      # commenting: open
+  # -
+  # scope:
+      # path: '_posts'
+      # type: posts
+  # values:
+      # layout: post
+      # author: saeedG
+      # commenting: open
+  # -
+  # authors:
+    # saeedG:
+        # name: Saeed Ghanavat
+        # email:
+        # url: https://codingmarvels.com
         
 # Exclude from processing.
 # The following items will not be processed, by default. Create a custom list
