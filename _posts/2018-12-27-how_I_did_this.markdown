@@ -19,6 +19,6 @@ I use Jekyll to create my blog. https://jekyllrb.com/
 
 It is a static site generator, which means for me that I can easily create my blog and upload my posts without any complication which was bugging my brain for ages.
 
-When I bumped intp this this lovely solution, didn't take me long to scroll down their website to find out, bingo. I can use Github Pages, here at https://pages.github.com, to upload my blog.
+When I bumped intp this this lovely solution, didn't take me long to scroll down their website to find out, bingo. I can use Github Pages, here at https://pages.github.com to upload my blog.
 
 For those of you my friends looking for a quick and easy solution. I would advise take a look at the links I have posted here. See if this is also a medicine for you or not.
