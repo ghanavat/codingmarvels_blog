@@ -16,13 +16,13 @@ layout: default
   </header>
 
   <div class="post-content e-content" itemprop="articleBody">
-    {{ content }}	
-    {% include comments.html %}
+    {{ content }}
+    {% include comment-new.html %}
   </div>
 
-  {%- if site.disqus.shortname -%}
-    {%- include disqus_comments.html -%}
-  {%- endif -%}    
+  <!-- {%- if site.disqus.shortname -%} -->
+    <!-- {%- include disqus_comments.html -%} -->
+  <!-- {%- endif -%} -->
 
   <a class="u-url" href="{{ page.url | relative_url }}" hidden></a>
 </article>

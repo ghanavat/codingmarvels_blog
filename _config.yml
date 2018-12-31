@@ -52,9 +52,9 @@ defaults:
    commenting: open
   authors:
    saeedg:
-   name: saeed ghanavat
-   email:
-   url: https://codingmarvels.com
+     name: Saeed Ghanavat
+     email:
+     url: https://codingmarvels.com
         
 # Exclude from processing.
 # The following items will not be processed, by default. Create a custom list
