@@ -27,7 +27,9 @@ markdown: kramdown
 theme: minima
 plugins:
   - jekyll-feed
-  
+
+repository: "codingmarvels_blog"
+
 defaults:
  -
   scope:
@@ -48,7 +50,23 @@ defaults:
      name: Saeed Ghanavat
      email:
      url: https://codingmarvels.com
-        
+
+staticman:
+  allowedFields          : ['name', 'email', 'url', 'message']
+  branch                 : "master"
+  commitMessage          : "New comment."
+  filename               : comment-{@timestamp}
+  format                 : "yml"
+  moderation             : true
+  path                   : "_data/comments/{options.slug}"
+  requiredFields         : ['name', 'email', 'message']
+  transforms:
+    email                : "md5"
+  generatedFields:
+    date:
+      type               : "date"
+      options:
+        format           : "iso8601"
 # Exclude from processing.
 # The following items will not be processed, by default. Create a custom list
 # to override the default setting.
