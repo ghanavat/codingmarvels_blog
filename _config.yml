@@ -29,8 +29,9 @@ plugins:
   - jekyll-feed
  
 emptyArray: []
+
 comments:
-receiver: https://codingmarvels.com/api/PostComment
+  receiver: https://codingmarvels.com/api/PostComment
   
 defaults:
  -
