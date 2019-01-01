@@ -18,6 +18,7 @@ layout: default
   <div class="post-content e-content" itemprop="articleBody">
     {{ content }}
 	{% include commentForm.html %}
+	{% include postComments.html %}
   </div>  
 	
   {%- if site.disqus.shortname -%}
