@@ -40,8 +40,7 @@ defaults:
    type: pages
   values:
    layout: page
-   author: saeedG
-   commenting: open
+   author: saeedG   
  -
   scope:
    path: '_posts'
