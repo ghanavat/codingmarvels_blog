@@ -28,7 +28,7 @@ theme: minima
 plugins:
   - jekyll-feed
  
-emptyArray: []
+ emptyArray: []
 
 comments:
   receiver: https://codingmarvels.com/api/PostComment
@@ -40,14 +40,16 @@ defaults:
    type: pages
   values:
    layout: page
-   author: saeedG   
+   author: saeedG
+#   commenting: open
  -
   scope:
    path: '_posts'
    type: posts
   values:
    layout: post
-   author: saeedG   
+   author: saeedG
+   commenting: open
   authors:
    saeedg:
      name: Saeed Ghanavat
