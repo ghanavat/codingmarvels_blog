@@ -41,7 +41,6 @@ defaults:
   values:
    layout: page
    author: saeedG
-#   commenting: open
  -
   scope:
    path: '_posts'
