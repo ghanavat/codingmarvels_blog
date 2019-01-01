@@ -27,11 +27,6 @@ markdown: kramdown
 theme: minima
 plugins:
   - jekyll-feed
- 
-emptyArray: []
-
-comments:
-  receiver: https://codingmarvels.com/api/PostComment
   
 defaults:
  -
@@ -40,8 +35,7 @@ defaults:
    type: pages
   values:
    layout: page
-   author: saeedG
-   commenting: closed
+   author: saeedG   
  -
   scope:
    path: '_posts'
@@ -49,7 +43,6 @@ defaults:
   values:
    layout: post
    author: saeedG
-   commenting: closed
   authors:
    saeedg:
      name: Saeed Ghanavat
