@@ -30,14 +30,7 @@ plugins:
 
 repository: "codingmarvels_blog"
 
-defaults:
- -
-  scope:
-   path: ''
-   type: pages
-  values:
-   layout: page
-   author: saeedG   
+defaults: 
  -
   scope:
    path: '_posts'
