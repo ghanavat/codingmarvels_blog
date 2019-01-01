@@ -28,8 +28,7 @@ theme: minima
 plugins:
   - jekyll-feed
  
-#emptyArray: []
-
+emptyArray: []
 comments:
 receiver: https://codingmarvels.com/api/PostComment
   
