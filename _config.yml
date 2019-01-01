@@ -41,7 +41,7 @@ defaults:
   values:
    layout: page
    author: saeedG
-   commenting: closed
+   commenting: open
  -
   scope:
    path: '_posts'
@@ -49,7 +49,7 @@ defaults:
   values:
    layout: post
    author: saeedG
-   commenting: closed
+   commenting: open
   authors:
    saeedg:
      name: Saeed Ghanavat
