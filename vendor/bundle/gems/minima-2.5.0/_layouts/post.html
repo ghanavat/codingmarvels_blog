@@ -19,9 +19,9 @@ layout: default
     {{ content }}
   </div>
   
-    <!-- {% include comment-new.html %} -->
-	<!-- {% include comments.html %} -->
-	<!-- {% include comment.html %} -->
+{% include comment-new.html %}
+{% include comments.html %}
+{% include comment.html %}
 	
   {%- if site.disqus.shortname -%}
     {%- include disqus_comments.html -%}
