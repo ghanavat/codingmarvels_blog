@@ -44,8 +44,6 @@ defaults:
      email:
      url: https://codingmarvels.com
 
-comments:
-  provider               : "staticman"
 staticman:
   allowedFields          : ['name', 'email', 'url', 'message']
   branch                 : "master"
