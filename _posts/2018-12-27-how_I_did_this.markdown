@@ -15,7 +15,7 @@ Once I have found how to design my blog with the ability to upload my posts as q
 
 This particular solution I have been buzzing about also helped me to host my blog, again, hassle free. Just needed to tweak some DNS settings on my domain registrar account dashboard, in order to wire up my blog to my domain.
 
-I use Jekyll to create my blog. https://jekyllrb.com/
+I use Jekyll to create my blog. <a href='https://jekyllrb.com/'>https://jekyllrb.com/</a>
 
 It is a static site generator, which means for me that I can easily create my blog and upload my posts without any complication which was bugging my brain for ages.
 
