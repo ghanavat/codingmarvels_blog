@@ -44,10 +44,12 @@ defaults:
      email:
      url: https://codingmarvels.com
 
+comments:
+  provider               : "staticman"
 staticman:
   allowedFields          : ['name', 'email', 'url', 'message']
-  branch                 : "master", "gh-pages"
-  commitMessage          : "New comment."
+  branch                 : "master"
+  commitMessage          : "New comment"
   filename               : comment-{@timestamp}
   format                 : "yml"
   moderation             : true
@@ -60,15 +62,3 @@ staticman:
       type               : "date"
       options:
         format           : "iso8601"
-
-# Exclude from processing.
-# The following items will not be processed, by default. Create a custom list
-# to override the default setting.
-# exclude:
-#   - Gemfile
-#   - Gemfile.lock
-#   - node_modules
-#   - vendor/bundle/
-#   - vendor/cache/
-#   - vendor/gems/
-#   - vendor/ruby/
