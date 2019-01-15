@@ -45,18 +45,20 @@ defaults:
    values:
     layout: page
     author: saeedG
+    commenting: open
  -
   scope:
    path: '_posts'
    type: posts
   values:
    layout: post
-   author: saeedG   
-  saeedg:
+   author: saeedG
+   commenting: open
+  authors:
+   saeedg:
      name: Saeed Ghanavat
-     email:
-     url: https://codingmarvels.com
-     commenting: open
+     email: codingmarvels@ghanavat.com
+     url: https://codingmarvels.com     
 
 exclude:
   - vendor
