@@ -17,7 +17,7 @@ title: Coding Marvels
 email: codingmarvels@ghanavat.co.uk
 description: >- # this means to ignore newlines until "baseurl:"
   Coding marvels is my personal blog and I will be focusing on WebAssembly and mostly Blazor! Have you heard of Blazor? No? Yes? Doesn’t matter if the answer is yes or no. We’re gonna have a lot of fun together and we will figure out exciting stuff as we go along, which will help this blog to evolve and give values to others.
-baseurl: "" # the subpath of your site, e.g. /blog
+baseurl: "/" # the subpath of your site, e.g. /blog
 url: "codingmarvels.com" # the base hostname & protocol for your site, e.g. https://codingmarvels.com
 #twitter_username: Maybe!
 #github_username:  jekyll
