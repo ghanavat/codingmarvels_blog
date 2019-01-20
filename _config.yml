@@ -33,7 +33,7 @@ repository: "codingmarvels_blog"
 comments:
   enabled: true
   show_count: true
-  receiver: https://codingmarvelscomments.azurewebsites.net/api/PostComment
+  receiver: https://codingmarvelscommenting.azurewebsites.net/api/PostComment
   
 emptyArray: []
 
