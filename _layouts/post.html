@@ -16,9 +16,7 @@ layout: default
   </header>
 
   <div class="post-content e-content" itemprop="articleBody">
-    {{ content }}
-    {% include comments.html %}
-    {% include comment.html %}
+    {{ content }}    
   </div>  
 	
   {%- if site.disqus.shortname -%}
@@ -27,3 +25,5 @@ layout: default
 
   <a class="u-url" href="{{ page.url | relative_url }}" hidden></a>
 </article>
+{% include comments.html %}
+{% include comment.html %}
