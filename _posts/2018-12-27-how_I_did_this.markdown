@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "Brief story behind my blog!"
+title:  "How I did this?"
 date:   2018-12-27 21:35:00 +0000
 categories: introduction
 commenting: open
