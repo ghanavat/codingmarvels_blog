@@ -24,26 +24,17 @@
     <input name="redirect" type="hidden" value="{{ site.url }}">
     <input name="post_id" type="hidden" value="{{ slug }}">
     <input name="comment-site" type="hidden" value="{{ site.url }}">    
-	<table style="border-collapse: collapse;">
+	<table>
 		<tr>
-			<textarea name="message" id="message" placeholder="Continue the discussion." style="width: 100%"></textarea>
+			<textarea name="message" id="message" placeholder="Continue the discussion." style="width: 100%; height: 100px"  required></textarea>
 		</tr>
-		<tr>
-			<td><label for="name">Name </label></td>
+		<tr>			
 			<td><input type="text" name="name" id="name" placeholder="Display Name"/></td>
+			<td><input type="text" name="email" id="email" placeholder="Email address" /></td>
+			<td><button onclick="setupForm()" type="button" class="btn btn-primary" id="commentbutton">Leave response</button></td>
+			<!-- <td><input type="text" name="url" id="url" placeholder="Website url"/></td> -->
 		</tr>
-		<tr>
-			<td><label for="email">Email </label></td>
-			<td><input type="text" name="email" id="email" placeholder="Required" /></td>			
-		</tr>
-		<tr>
-			<td><label for="url">Website <span>(displayed)</span></label></td>
-			<td><input type="text" name="url" id="url" /></td>
-		</tr>
-		<tr>
-			<td><button onclick="setupForm()" type="button" class="btn btn-primary" id="commentbutton">Leave response</button></td>			
-		</tr>
-	</table>	
+	</table>
   </fieldset>
 </form>
 <script>
