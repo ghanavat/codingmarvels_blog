@@ -1,9 +1,0 @@
----
-layout: post
-title:  "Test"
-date:   2018-12-26 23:01:00 +0000
-categories: welcome
-commenting: open
----
-
-Hello, this is a testing post to make sure my commenting solution works as expected
