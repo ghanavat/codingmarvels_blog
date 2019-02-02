@@ -20,7 +20,7 @@ baseurl: "/" # the subpath of your site, e.g. /blog
 url: "https://codingmarvels.com" # the base hostname & protocol for your site, e.g. https://codingmarvels.com
 footerEmailTitle: "Contact me:"
 #twitter_username: Maybe!
-#github_username:  jekyll
+github_username:  ghanavat
 
 # Build settings
 markdown: kramdown
