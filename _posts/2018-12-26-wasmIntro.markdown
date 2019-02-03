@@ -3,6 +3,7 @@ layout: post
 title:  "An introduction to WASM"
 date:   2019-02-03 16:00:00 +0000
 categories: WASM
+commenting: open
 ---
 
 WASM is a short for WebAssembly. I am working on an introduction to WASM in my own way and my own language! Ha!
