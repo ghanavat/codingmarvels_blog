@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "An introduction to WASM"
+title:  "An introduction to WebAssembly"
 date:   2019-02-03 16:00:00 +0000
 categories: WASM
 commenting: open
