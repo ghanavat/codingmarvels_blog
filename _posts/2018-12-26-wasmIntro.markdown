@@ -31,6 +31,3 @@ Why do we need it?
 --------------
 
 Simple answer, to bring more into the web. If you're implementing a web solution that would need to do a lot of calculations outside of the web, such as gaming, how easy is it to get that kind of performance from JavaScript? Not easy at all. JavaScript is meant to bring some interactivity to the web, while it's easy to learn and code. But, after years and years the list of stuff you could bring into the web started to expand. More rich web applications stepped into the web environment. That's the goal of WASM in my opinion. To allow you to bring more heavy stuff into the web. Such as video games, 3D rendering etc, by allowing you to execute native code in the browser.
-
-
-Please hang on a little bit. I will update this post with whatever you need to know about this technology.
