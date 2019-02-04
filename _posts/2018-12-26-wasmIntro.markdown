@@ -15,7 +15,7 @@ If you've noticed anything wrong with this post, please leave a comment for me. 
 What is WASM?
 -------------
 
-WASM is a new type of code. It can be run in any modern browsers. You don't need to actually write WASM code, instead it's a compilation target for low-level source languages (WHAT???). On the other hand you compile you code to it. It has a small size, and therefore it's fast to load and run.
+WASM is a new type of code. It can be run in any modern browsers. You don't need to actually write WASM code, instead it's a compilation target for low-level source languages (WHAT???). On the other hand you compile your code to it. It has a small size, and therefore it's fast to load and run.
 
 It's all about running native code in the browser. In all browsers, the code is interpreted by JavaScript engine which ONLY runs / executes JavaScript (I'm talking about the virtual machine that runs the Web app's code. OK?). So your browser doesn't execute any other languages. Right? For those of you who absolutely love JavaScript, WASM isn't intended as a replacement. Instead, it is designed to work alongside JavaScript. This will allow us developers to take advantages of both languages' powerful aspects.
 
@@ -25,7 +25,7 @@ Take a look at the below simple diagram. It's a high level picture of how WASM w
 
 ![WASM high level diagram](/assets/imgs/WASM_HighLevel_Diagram.jpg)
 
-Now with the WASM within the browsers, the virtual machine I have mentioned earlier, can now load and run twotypes of code, JavaScript and WASM. How cool is that!
+Now with the WASM within the browsers, the virtual machine I have mentioned earlier, can now load and run two types of code, JavaScript and WASM. How cool is that!
 
 Why do we need it?
 --------------
