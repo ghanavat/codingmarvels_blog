@@ -22,13 +22,25 @@ footerEmailTitle: "Contact me:"
 #twitter_username: Maybe!
 github_username:  ghanavat
 
+github:
+  is_project_page: true
+  owner_url: https://github.com/ghanavat
+  owner_name: Saeed Ghanavat
+
 # Build settings
 markdown: kramdown
-theme: minima
+theme: jekyll-theme-minimal
+
+header_pages:
+  - title: About
+    url: /about/
+  - title: Contact me
+    url: /contactMe/
+
 plugins:
   - jekyll-feed
 
-repository: "codingmarvels_blog"
+show_excerpts: true
 
 comments:
   enabled: true

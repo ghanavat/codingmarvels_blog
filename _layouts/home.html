@@ -2,33 +2,39 @@
 layout: default
 ---
 
-<div class="home">
+<div class="home expand-Post-List">
   {%- if page.title -%}
-    <h1 class="page-heading">{{ page.title }}</h1>
+    <h1 class="page-heading">{{ page.title }}</h1>    
   {%- endif -%}
 
   {{ content }}
 
   {%- if site.posts.size > 0 -%}
-    <h2 class="post-list-heading">{{ page.list_title | default: "Posts" }}</h2>
-    <ul class="post-list">
-      {%- for post in site.posts -%}
-      <li>
-        {%- assign date_format = site.minima.date_format | default: "%b %-d, %Y" -%}
-        <span class="post-meta">{{ post.date | date: date_format }}</span>
-        <h3>
-          <a class="post-link" href="{{ post.url | relative_url }}">
-            {{ post.title | escape }}
-          </a>
-        </h3>
-        {%- if site.show_excerpts -%}
-          {{ post.excerpt }}
-        {%- endif -%}
-      </li>
-      {%- endfor -%}
-    </ul>
-
+    <!-- <h2 class="post-list-heading">{{ page.list_title | default: "Posts" }}</h2> -->
+    <div class="posts-list">
+        {%- for post in site.posts -%}          
+          <header class="post-header">
+            <div class="meta">
+                {%- assign date_format = site.minima.date_format | default: "%b %-d, %Y" -%}
+                <time class="date">{{ post.date | date: date_format }}</time>
+            </div>
+            <h1 class="post-title">
+                <a href="{{ post.url | relative_url }}">
+                  {{ post.title | escape }}
+                </a>
+            </h1>
+            {%- if site.show_excerpts -%}
+            <div class="post-preview-content">
+                <div class="excerpt">
+                    {{ post.excerpt }}
+                </div>
+            </div>
+            {%- endif -%}            
+            
+          </header>
+        {%- endfor -%}
+    </div>
+    
     <!-- <p class="rss-subscribe">subscribe <a href="{{ "/feed.xml" | relative_url }}">via RSS</a></p> -->
   {%- endif -%}
-
 </div>

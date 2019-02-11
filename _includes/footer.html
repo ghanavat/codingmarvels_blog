@@ -1,31 +1,11 @@
+---
+---
 <footer class="site-footer h-card">
-  <data class="u-url" href="{{ "/" | relative_url }}"></data>
-
-  <div class="wrapper">
-
-    <!--<h2 class="footer-heading">{{ site.title | escape }}</h2>-->
-
-    <div class="footer-col-wrapper">
-      <div class="footer-col footer-col-1">
-        <ul class="contact-list">
-            <li class="p-name">
-              {{- site.footerEmailTitle -}}
-            </li>
-            {%- if site.email -%}
-            <li><a class="u-email" href="mailto:{{ site.email }}">{{ site.email }}</a></li>
-            {%- endif -%}
-        </ul>
-      </div>
-
-      <div class="footer-col footer-col-2">
-        {%- include social.html -%}
-      </div>
-
-      <div class="footer-col footer-col-3">
-        <p>{{- site.description | escape -}}</p>
-      </div>
+    <div class="wrapper">
+        <p>This project is maintained by:</p>
+        {% if site.github.is_project_page %}
+          <span class="icon icon--github">{% include icon-github.svg %}</span><a href="{{ site.github.owner_url }}" target="_blank">{{ site.github.owner_name }}</a>
+        {% endif %}
+        <p><small>Hosted on GitHub Pages</small></p>
     </div>
-
-  </div>
-
-</footer>
+  </footer>
