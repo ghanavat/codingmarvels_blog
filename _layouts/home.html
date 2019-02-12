@@ -13,7 +13,7 @@ layout: default
     <!-- <h2 class="post-list-heading">{{ page.list_title | default: "Posts" }}</h2> -->
     <div class="posts-list">
         {%- for post in site.posts -%}          
-          <header class="post-header">
+          <div class="post-header">
             <div class="meta">
                 {%- assign date_format = site.minima.date_format | default: "%b %-d, %Y" -%}
                 <time class="date">{{ post.date | date: date_format }}</time>
@@ -29,7 +29,7 @@ layout: default
               </div>            
             {%- endif -%}            
             
-          </header>
+          </div>
         {%- endfor -%}
     </div>
     
