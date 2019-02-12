@@ -19,7 +19,7 @@
               {% if site.logo %}
                 <img src="{{site.logo | relative_url}}" alt="Logo" />
               {% endif %}              
-              <nav class="site-nav">
+              <div class="site-nav">
                 <ul>
                   {% for navPage in site.header_pages %}
                   <li>
@@ -27,7 +27,7 @@
                   </li>
                   {% endfor %}
                 </ul>
-                </nav>              
+                </div>              
           </div>
   
           <!-- {% if site.github.is_project_page %}
