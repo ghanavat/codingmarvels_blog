@@ -40,7 +40,7 @@ header_pages:
 plugins:
   - jekyll-feed
 
-show_excerpts: false
+show_excerpts: true
 
 comments:
   enabled: true
