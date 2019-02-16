@@ -3,6 +3,9 @@
 
 @import "{{ site.theme }}";
 
+body{
+    padding: 0;
+}
 .header{
     position: fixed;
     overflow-x: hidden;
@@ -90,10 +93,9 @@
 .site-footer{
     padding: 30px 0;
     background-color: #333;
-    border-top: 1px solid red;
-    //left: 0;
-    bottom: 0;
-    width: 100%;
+    border-top: 1px solid red;    
+    //bottom: 0;
+    //width: 100%;
 }
 .footer-col-wrapper{
     font-size: 19.6875px;
