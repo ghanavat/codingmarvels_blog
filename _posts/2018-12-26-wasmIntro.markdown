@@ -4,6 +4,7 @@ title:  "An introduction to WebAssembly"
 date:   2019-02-03 16:00:00 +0000
 categories: WASM
 commenting: open
+excerpt_separator: <!--more-->
 ---
 
 I think everyone or every beginner to WASM would be struggling a little bit to understand or make sense of it at the first place. This is including myself by the way.
