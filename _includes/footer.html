@@ -1,11 +1,19 @@
----
----
-<div class="site-footer h-card">
-    <div class="wrapper">
-        <p>This project is maintained by:</p>
-        {% if site.github.is_project_page %}
-          <span class="icon icon--github">{% include icon-github.svg %}</span><a href="{{ site.github.owner_url }}" target="_blank">{{ site.github.owner_name }}</a>
-        {% endif %}
-        <p><small>Hosted on GitHub Pages</small></p>
-    </div>
-  </div>
+<!-- <div class="site-footer h-card">    
+      <div class="footer-col-wrapper">
+          <p>This project is maintained by:</p>
+          {%- if site.github.is_project_page -%}
+            <span class="icon icon--github">{% include icon-github.svg %}</span><a href="{{ site.github.owner_url }}" target="_blank">{{ site.github.owner_name }}</a>
+          {%- endif -%}
+          <p><small>Hosted on GitHub Pages</small></p>
+      </div>    
+</div> -->
+<footer>    
+    <p>This project is maintained by:</p>
+    <span class="icon icon--github">{% include icon-github.svg %}</span>
+    <a href="{{ site.github.owner_url }}" target="_blank">{{ site.github.owner_name }}</a>
+
+    <div class="footer-theme">
+        <p>Theme is <a href="https://github.com/pages-themes/minimal" target="_blank">Jekyll minimal </a>&mdash; but modified a lot by myself!</p>
+    </div>    
+    <p><small>Hosted on GitHub Pages</small></p>    
+</footer>
