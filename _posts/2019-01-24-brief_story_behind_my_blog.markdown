@@ -4,6 +4,7 @@ title:  "Brief story behind my blog"
 date:   2018-12-27 21:35:00 +0000
 categories: introduction
 commenting: open
+excerpt_separator: <!--more-->
 ---
 
 I have been thinking of creating my own blog for more than it needed. Part of the problem was the complication. I needed something quick. Something that I could quickly share my ideas and opinions, as soon as I wrote them. Currently there are countless number of services which provide an environment where you can create and setup your website/blog. I am not going to mention their brands obviously (some of them are great to be fair). But there is far more time consuming that I was planning for.
