@@ -1,5 +1,5 @@
 current directory: D:/Development/Workstation/Repository/codingmarvels_blog/vendor/bundle/gems/wdm-0.1.1/ext/wdm
-C:/Ruby25-x64/bin/ruby.exe -r ./siteconf20181224-2832-d6wd1o.rb extconf.rb
+C:/Ruby25-x64/bin/ruby.exe -r ./siteconf20190216-23152-petx0j.rb extconf.rb
 checking for -lkernel32... yes
 checking for windows.h... yes
 checking for ruby.h... yes
@@ -30,4 +30,4 @@ linking shared-object wdm_ext.so
 
 current directory: D:/Development/Workstation/Repository/codingmarvels_blog/vendor/bundle/gems/wdm-0.1.1/ext/wdm
 make "DESTDIR=" install
-/usr/bin/install -c -m 0755 wdm_ext.so ./.gem.20181224-2832-m78wge
+/usr/bin/install -c -m 0755 wdm_ext.so ./.gem.20190216-23152-ad4az
