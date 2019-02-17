@@ -7,6 +7,7 @@ commenting: open
 ---
 
 Hello, thanks for visiting my blog. I know it's pretty quiet here at the moment. This is because I am setting up the gears and putting up things where their should be.
+<!--more-->
 
 Coding marvels is my personal blog and I will be focusing on WebAssembly and mostly Blazor! Have you heard of Blazor? No? Yes? Doesn't matter if the answer is yes or no. We're gonna have a lot of fun together and we will figure out exciting stuff as we go along, which will help this blog to evolve and give values to others.
 

@@ -7,6 +7,7 @@ commenting: open
 ---
 
 I think everyone or every beginner to WASM would be struggling a little bit to understand or make sense of it at the first place. This is including myself by the way.
+ <!--more-->
 
 There are plenty different websites with similar topic as mine here. My goal is to give you guys very brief introduction to WASM. By all means you can refer to the <u><a href='https://webassembly.org/' target='_blank'>WebAssembly</a></u> website and learn more. If you like to delve into more technical discussion, refer to the <u><a href='https://developer.mozilla.org' target='_blank'>MDN</a></u> site and navigate to the WebAssembly topic.
 
