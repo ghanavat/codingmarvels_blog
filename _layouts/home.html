@@ -19,12 +19,14 @@ layout: default
                 </a>
             </h1>
           </div>
-        {%- if site.show_excerpts -%}
-          <!-- <div class="excerpt"> -->
-            {{ post.excerpt }}
-          <!-- </div> -->
-        {%- endif -%}
-        {%- endfor -%}
+          <div class="post-content">
+              {%- if site.show_excerpts -%}
+              <!-- <div class="excerpt"> -->
+                {{ post.excerpt }}
+              <!-- </div> -->
+            {%- endif -%}
+          </div>        
+          {%- endfor -%}
     </div>
     <!-- <p class="rss-subscribe">subscribe <a href="{{ "/feed.xml" | relative_url }}">via RSS</a></p> -->
   {%- endif -%}
