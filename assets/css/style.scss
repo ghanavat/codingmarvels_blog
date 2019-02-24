@@ -70,7 +70,7 @@ header ul a:hover{
 .site-title {
     font-size: 2.5vw;
     color: darkblue;
-    line-height: 53.55px;    
+    line-height: 53.55px;
     font-weight: bold;    
 }
 .header-content {
@@ -120,11 +120,24 @@ header ul a:hover{
     margin-bottom: 30px;
     line-height: 33px;    
 }
+@media print, screen and (max-width: 1650px){
+    .site-title{
+        line-height: 45px;
+    }
+}
 @media print, screen and (max-width: 1500px){
     section{
         border: none;
         margin-left: 10%;
         width: 100%;
+    }
+    .site-title{
+        line-height: 40px;
+    }
+}
+@media print, screen and (max-width: 1290px){
+    .site-title{
+        line-height: 40px;
     }
 }
 @media print, screen and (max-width: 1250px){
@@ -227,6 +240,9 @@ header ul a:hover{
         width: auto;
         height: auto;
     }
+    .site-title{
+        line-height: 60px;
+    }
 }
 @media print, screen and (max-width: 520px){
     section{
@@ -236,6 +252,9 @@ header ul a:hover{
         margin-left: auto;
         width: auto;
         height: auto;
+    }
+    .site-title{
+        line-height: 55px;
     }
 }
 @media print, screen and (max-width: 480px){
@@ -247,6 +266,9 @@ header ul a:hover{
         width: auto;
         height: auto;
     }
+    .site-title{
+        line-height: 50px;
+    }
 }
 @media print, screen and (max-width: 435px){
     section{
@@ -257,6 +279,9 @@ header ul a:hover{
         width: auto;
         height: auto;
     }
+    .site-title{
+        line-height: 45px;
+    }
 }
 @media print, screen and (max-width: 401px){
     section{
@@ -266,5 +291,17 @@ header ul a:hover{
         margin-left: 5%;
         width: auto;
         height: auto;
+    }
+    .site-title{
+        line-height: 40px;
+    }
+    #comments{
+        width: 60%;
+    }
+    .form-horizontal{
+        width: 60%;
+    }
+    fieldset{
+        width: 50%;
     }
 }
