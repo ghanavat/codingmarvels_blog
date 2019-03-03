@@ -4,11 +4,14 @@ title:  "About Mono! An implementation of .Net Framework"
 date:   2019-03-02 15:00:00
 categories: Mono
 tags: [WASM, WebAssembly, Mono, .Net Framework]
+excerpt_separator: <!--more-->
+commenting: open
 ---
 
 What is Mono?
 
-Mono is an implementation of .Net Framework, sponsored by Microsoft, and yes it is open source in case you were wondering! It is a solution which allows developers to make cross platform applications. The main C# compiler of the Mono is MCS. 
+Mono is an implementation of .Net Framework, sponsored by Microsoft, and yes it is open source in case you were wondering! It is a solution which allows developers to make cross platform applications. The main C# compiler of the Mono is MCS.
+<!--more-->
 
 -- About MCS:
 According to <u><a href='https://www.mono-project.com/docs/about-mono/languages/csharp/' target='_blank'>Mono Project</a></u> documentatio page, MCS it written in C# and uses heavily the .Net APIs. It covers all the features for majority versions of C#, but only partial support for C# 7.0:
