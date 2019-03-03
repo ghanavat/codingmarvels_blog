@@ -60,3 +60,5 @@ Relationship with Blazor
 -
 
 Being written...
+
+Follow the post [About Blazor, web development is changing!]({% post_url /_posts/2019-03-02-blazorIntro %})
