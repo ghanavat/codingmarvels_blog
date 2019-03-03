@@ -50,7 +50,7 @@ For the sake of the re-usability, please navigate to the <u><a href='https://www
 
 Once the solution is built successfully, rund the monodevelop.exe from \main\build\bin directory. This is how MonoDevelop can be used for Windows, directly from the source. Below is the main screen of MonoDevelop IDE:
 
-![MonoDevelop startup page](/assets/imgs/MonoDevelop.jpg)
+![MonoDevelop startup page](/assets/imgs/MonoDevelop.JPG)
 
 Using this IDE you can take full advantage of the framework. I leave you guys alone with this IDE. If you are having issues building the solution, make sure you're doing so through the 'winbuild.bat' file located in \main directory. Leave comments below if you are experiencing issues and need help.
 

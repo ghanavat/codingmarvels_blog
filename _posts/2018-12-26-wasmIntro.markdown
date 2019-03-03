@@ -2,7 +2,7 @@
 layout: post
 title:  "An introduction to WebAssembly"
 date:   2019-02-03 16:00:00 +0000
-categories: WASM
+categories: [WASM, Mono]
 commenting: open
 excerpt_separator: <!--more-->
 ---
