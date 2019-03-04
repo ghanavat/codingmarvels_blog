@@ -48,13 +48,13 @@ One way to experience Mono and write code using it is through the MonoDevelop ID
 
 For the sake of the re-usability, please navigate to the <u><a href='https://www.monodevelop.com/' target='_blank'>MonoDevelop</a></u> website. And then navigate to the download page where you will find a link to the 'building guide'. You will notice that MonoDevelop for Windows is only available through the source! It's very straightforward, clone the GitHub project into a directory on your Windows machine, then navigate to <u>main</u> folder and open <u>Main.sln</u> and build the solution. Remember, you MUST have the prerequisites ready and installed on your machine first.
 
-Once the solution is built successfully, rund the monodevelop.exe from \main\build\bin directory. This is how MonoDevelop can be used for Windows, directly from the source. Below is the main screen of MonoDevelop IDE:
+Once the solution is built successfully, run the monodevelop.exe from \main\build\bin directory. This is how MonoDevelop can be used for Windows, directly from the source. Below is the main screen of MonoDevelop IDE:
 
 ![MonoDevelop startup page](/assets/imgs/MonoDevelop.JPG)
 
-Using this IDE you can take full advantage of the framework. I leave you guys alone with this IDE. If you are having issues building the solution, make sure you're doing so through the 'winbuild.bat' file located in \main directory. Leave comments below if you are experiencing issues and need help.
+Using this IDE you can take full advantage of the framework. I leave you guys alone with this IDE. If you are having issues building the solution, make sure you're doing so through the 'winbuild.bat' file located in <u>main</u> directory. Leave comments below if you are experiencing issues and need help.
 
-Another way to experience Mono is very basic and through Command Prompt. Mono-project website has plenty example on how to write code using Mono. You can find more <u><a href='https://www.mono-project.com/docs/getting-started/mono-basics/' target='_blank'>here</a></u>
+Another way to experience Mono is very basic and through Command Prompt. Mono-project website has plenty example on how to write code using it. You can find more <u><a href='https://www.mono-project.com/docs/getting-started/mono-basics/' target='_blank'>here</a></u>
 
 Relationship with Blazor
 -
