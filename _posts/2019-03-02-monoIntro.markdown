@@ -42,7 +42,7 @@ I'm sure you are aware that as a developer, you can use Xamarin tools to write A
 How to use it?
 -
 
-You can download Mono from their official website <u><a href='https://www.mono-project.com/download/stable/' target='_blank'>here</a></u>. Please note that this project doesn't directly provide an IDE as such. You should choose from the toold that best suited for you. 
+You can download Mono from their official website <u><a href='https://www.mono-project.com/download/stable/' target='_blank'>here</a></u>. Please note that this project doesn't directly provide an IDE as such. You should choose from the tools that best suited for you. 
 
 One way to experience Mono and write code using it is through the MonoDevelop IDE. It's a free GNOME IDE. You can find it here, <u><a href='https://www.monodevelop.com/' target='_blank'>MonoDevelop</a></u>, an IDE for Windows, Linux and macOS, and provides development environment for Mono.
 
