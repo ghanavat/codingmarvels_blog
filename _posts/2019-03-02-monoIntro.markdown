@@ -46,7 +46,7 @@ You can download Mono from their official website <u><a href='https://www.mono-p
 
 One way to experience Mono and write code using it is through the MonoDevelop IDE. It's a free GNOME IDE. You can find it here, <u><a href='https://www.monodevelop.com/' target='_blank'>MonoDevelop</a></u>, an IDE for Windows, Linux and macOS, and provides development environment for Mono.
 
-For the sake of the re-usability, please navigate to the <u><a href='https://www.monodevelop.com/' target='_blank'>MonoDevelop</a></u> website. And then navigate to the download page where you will find a link to the 'building guide'. You will notice that MonoDevelop for Windows is only available through the source! It very easy, clone the GitHub project into a directory on your Windows machine, then navigate to main folder and open Main.sln and build the solution. Remember, you MUST have the prerequisites ready and installed on your machine first.
+For the sake of the re-usability, please navigate to the <u><a href='https://www.monodevelop.com/' target='_blank'>MonoDevelop</a></u> website. And then navigate to the download page where you will find a link to the 'building guide'. You will notice that MonoDevelop for Windows is only available through the source! It's very straightforward, clone the GitHub project into a directory on your Windows machine, then navigate to <u>main</u> folder and open <u>Main.sln</u> and build the solution. Remember, you MUST have the prerequisites ready and installed on your machine first.
 
 Once the solution is built successfully, rund the monodevelop.exe from \main\build\bin directory. This is how MonoDevelop can be used for Windows, directly from the source. Below is the main screen of MonoDevelop IDE:
 
