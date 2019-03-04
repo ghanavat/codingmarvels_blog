@@ -16,7 +16,7 @@ Mono is an implementation of .Net Framework, sponsored by Microsoft, and yes it 
 
 <u>About MCS</u>
 
-According to <u><a href='https://www.mono-project.com/docs/about-mono/languages/csharp/' target='_blank'>Mono Project</a></u> documentatio page, MCS it written in C# and uses heavily the .Net APIs. It covers all the features for majority versions of C#, but only partial support for C# 7.0:
+According to <u><a href='https://www.mono-project.com/docs/about-mono/languages/csharp/' target='_blank'>Mono Project</a></u> documentation page, MCS is written in C# and uses heavily the .Net APIs. It covers all the features for majority versions of C#, but only partial support for C# 7.0:
 
 - Tuples
 - Discards
@@ -33,7 +33,7 @@ According to <u><a href='https://www.mono-project.com/docs/about-mono/languages/
 - Readonly struct
 - Pattern matching (limited to simple usage)
 
-As Scott Hanselman mentioned it too, there is more than one .Net instance today. It is not the same as what it was in the past anymore when you would only install .Net on your Windows. We have .Net Core in Docker, Mac, it's even on my Raspberry Pi where I run my own mail server, and as well as Mono.
+As Scott Hanselman mentioned it too, there is more than one .Net instance today. It is not the same as it was in the past anymore when you would only install .Net on your Windows. We have .Net Core in Docker, Mac, it's even on my Raspberry Pi where I run my own mail server, and as well as Mono.
 
 It is good to know that this project wasn't supported by Microsoft itself from the beginning. It was previously supported by Xamarin and later by Microsoft and now the advocate of open source .Net, <u><a href='https://www.dotnetfoundation.org/' target='_blank'>.Net Foundation</a></u> too. It is also good to know that Xamarin founded in May 2011 by the creators of Mono, so it wasn't Microsoft baby at the first place. 
 
