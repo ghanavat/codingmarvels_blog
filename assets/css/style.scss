@@ -71,7 +71,11 @@ header ul a:hover{
     font-size: 2.5vw;
     color: darkblue;
     line-height: 53.55px;
-    font-weight: bold;    
+    font-weight: bold;
+}
+.site-logo{
+    width: 265px;
+    content:url("/assets/imgs/site_logo/full_Text_Logo.png");
 }
 .header-content {
     margin: 16% auto 0% 10%;
@@ -188,6 +192,10 @@ header ul a:hover{
     }
     .site-nav ul{
         height: 100%;
+    }
+    .site-logo{
+        width: 265px;
+        content:url("/assets/imgs/site_logo/short_Logo.png");
     }
 }
 @media print, screen and (max-width: 900px){

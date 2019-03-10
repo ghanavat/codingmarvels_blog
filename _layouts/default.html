@@ -24,14 +24,17 @@
   <body>
     <header>
         <div class="header-content">
+          <!-- Don't need this anymore, but don't want to remove it! -->            
             <!-- Site title -->
-            <h1><a class="site-title" href="{{ "/" | absolute_url }}">{{ site.title | default: site.github.repository_name }}</a></h1>        
+            <!-- <h1><a class="site-title" href="{{ "/" | absolute_url }}">{{ site.title | default: site.github.repository_name }}</a></h1> -->
+            
+            <!-- {% if site.logo %} -->              
+              <!-- <img src="{{site.logo | relative_url}}" alt="Coding Marvels" title="Coding Marvels" /> -->
+            <!-- {% endif %} -->
 
             <!-- Site logo -->
-            {% if site.logo %}
-              <img src="{{site.logo | relative_url}}" alt="Logo" />
-            {% endif %}
-          
+            <a class="site-logo" href="{{ "/" | absolute_url }}" title="Coding Mavels"></a>
+
             <!-- Site navigation -->
             <nav class="site-nav">
                 <ul>
