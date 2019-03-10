@@ -54,7 +54,7 @@ section{
     height: 100%;
     width: 100%;
 }
-.site-nav ul li{    
+.site-nav ul li{
     letter-spacing: 1px;
     line-height: 1.5;
     text-transform: lowercase;
@@ -70,7 +70,9 @@ header li{
     border: none;
 }
 header ul a{
-    color: #222;
+    //color: #222;
+    //color: #d69d85;
+    color: #57a64a;
     font-size: 23px;
     font-weight: bold;
     text-align: left;
@@ -107,6 +109,7 @@ header ul a:hover{
 }
 .post-header h1{
     font-size: 30px;
+    color: #569cd6;
 }
 .post-title{
     font-size: 30px;
@@ -114,7 +117,8 @@ header ul a:hover{
     line-height: 1;
 }
 .post-title a{
-    color: #222;
+    //color: #222;
+    color: #569cd6;
 }
 .post-title a:hover{
     color: #4ec9b0;
