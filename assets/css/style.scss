@@ -2,7 +2,13 @@
 ---
 
 @import "{{ site.theme }}";
+@import url('https://fonts.googleapis.com/css?family=Roboto+Slab:thin,light,regular,bold');
 
+body{
+    font-family: "Roboto Slab", serif;
+    font-size: 1.125rem;
+    line-height: 1.5;
+}
 .wrapper{
     margin-left: 20%;
     max-width: 750px;
@@ -18,13 +24,18 @@ footer{
     left: 0;
     bottom: 0;
     padding-left: 30px;
-    border-top: 1px solid lightgray;    
+    border-top: 1px solid lightgray;
+    font-family: 'Roboto Slab Light', serif;
+    color: black;
 }
-footer a{
+footer p{    
+    font-size: 14px;
+}
+footer a{    
     color: #222;
 }
 footer a:hover{
-    color: lightseagreen;
+    color: #4ec9b0;
 }
 .footer-theme{
     margin-top: 10px;
@@ -65,7 +76,7 @@ header ul a{
     text-align: left;
 }
 header ul a:hover{
-    color: lightseagreen;
+    color: #4ec9b0;
 }
 .site-title {
     font-size: 2.5vw;
@@ -88,7 +99,7 @@ header ul a:hover{
     color: #222222;
 }
 .header-content h1 a:hover{
-    color: lightseagreen;
+    color: #4ec9b0;
 }
 .post-header{
     margin-bottom: 30px;
@@ -106,7 +117,7 @@ header ul a:hover{
     color: #222;
 }
 .post-title a:hover{
-    color: lightseagreen;
+    color: #4ec9b0;
 }
 .contactMe-container{    
     max-width: 750px;
