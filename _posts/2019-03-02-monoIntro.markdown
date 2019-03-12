@@ -11,8 +11,7 @@ commenting: open
 What is Mono?
 -
 
-Mono is an implementation of .Net Framework, sponsored by Microsoft, and yes it is open source in case you were wondering! It is a solution which allows developers to make cross platform applications. The main C# compiler of the Mono is MCS.
-<!--more-->
+Mono is an implementation of .Net Framework, sponsored by Microsoft, and yes it is open source in case you were wondering! It is a solution which allows developers to make cross platform applications. The main C# compiler of the Mono is MCS. <!--more-->
 
 <u>About MCS</u>
 
