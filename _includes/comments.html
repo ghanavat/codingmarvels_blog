@@ -11,7 +11,7 @@
 <div id="comments">
   <h3>{% if comment_count == 1 %}One response{% else %}{{ comment_count }} responses{% endif %}</h3>
   <ol>
-  {% assign sorted_comments = comments | sort: 'date' | reverse %}
+  {% assign sorted_comments = comments | sort: 'date' %}
   {% for comment in sorted_comments %}
     <li{% if comment.email == author.email %} class="byauthor" {% endif %}>
       {% include comment.html %}
