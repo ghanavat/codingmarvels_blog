@@ -9,6 +9,12 @@ body{
     font-size: 1.125rem;
     line-height: 1.5;
 }
+a{
+    color: #d69d85
+}
+a:hover{
+    color: #d69d85
+}
 .wrapper{
     margin-left: 20%;
     max-width: 750px;
@@ -70,8 +76,6 @@ header li{
     border: none;
 }
 header ul a{
-    //color: #222;
-    //color: #d69d85;
     color: #57a64a;
     font-size: 23px;
     font-weight: bold;
@@ -138,6 +142,9 @@ header ul a:hover{
 .post-content{
     margin-bottom: 30px;
     line-height: 33px;    
+}
+i{
+    color: black;
 }
 @media print, screen and (max-width: 1650px){
     .site-title{
