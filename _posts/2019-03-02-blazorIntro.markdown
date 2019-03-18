@@ -36,11 +36,11 @@ Again it’s very easy on the paper. Take a look at the image below:
  
 ![Client-Side Blazor diagram](/assets/imgs/BlazorIntro/Blazor_ClientSideModel.jpg)
 
-<![endif]--> Did you understand what it is saying? I didn’t. In my view, this image is rather vague and unclear. Let me open it up a bit for you guys. First, let me remind you of this, Blazor is powered by C# (I hope it’ll support other programming languages) and Razor.
+Did you understand what it is saying? I didn’t. In my view, this image is rather vague and unclear. Let me open it up a bit for you guys. First, let me remind you of this, Blazor is powered by C# (I hope it’ll support other programming languages) and Razor.
 
 Remember Mono? Cool. Mono engineers and developer are busy working on bringing the .Net runtime to the web using WASM. <a href="https://www.mono-project.com/news/2018/01/16/mono-static-webassembly-compilation/" target="_blank">You can read more about it here</a>. Blazor builds on their work to create a rich client-side (and server-side!) SPA using .Net.
 
-# Client-Side Blazor
+### Client-Side Blazor
 
 The image above shows one way you can host Blazor app in a browser, client-side hosting model. Using this model, Blazor runs under Mono WASM. In other word, client-side Blazor, builds a _render-tree_ using Mono runtime. It is then sent to JavaScript to update the DOM.
 
@@ -48,7 +48,7 @@ Using this hosting model, the whole .Net runtime (Mono runtime), the app and all
 
 ![Different Blazor Apps](/assets/imgs/BlazorIntro/BlazorHostingModelsApps.jpg)
 
-# Server-Side Blazor
+### Server-Side Blazor
 
 There is also another way of hosting your Blazor app. On 7th of August 2018, Daniel Roth has introduced a new execution model for Blazor. It's called server-side Blazor. This model runs under a native .Net Core process. Your app is hosted on ASP.Net Core. All UI updates, event handling, and JavaScript calls are handled via SignalR connection. In this model, _render-tree_ gets built on the server-side. And then it's get serialised to the browser using SignalR communication. The benefit of this is almost obvious. Smaller app size than the client-side model, thus it’s faster. This is because your application does not need to download _mono.wasm_ anymore.
 
