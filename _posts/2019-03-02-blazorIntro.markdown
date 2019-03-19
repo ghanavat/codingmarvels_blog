@@ -1,6 +1,7 @@
 ---
 layout: post
 title:  "About Blazor, a game changer platform"
+author: "Saeed Ghanavat"
 date:   2019-03-02 16:00:00
 categories: [Mono, Blazor, WASM]
 tags: [Blazor, WASM, WebAssembly, Mono, .Net Framework]
