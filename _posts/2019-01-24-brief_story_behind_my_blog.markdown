@@ -1,7 +1,8 @@
 ---
 layout: post
 title:  "Brief story behind my blog"
-date:   2018-12-27 21:35:00 +0000
+author: "Saeed Ghanavat"
+date:   2018-12-27 21:35:00
 categories: introduction
 commenting: open
 excerpt_separator: <!--more-->
