@@ -1,6 +1,7 @@
 ---
 layout: post
 title:  "An introduction to WebAssembly"
+author: "Saeed Ghanavat"
 date:   2019-02-03
 categories: [WASM, Mono]
 tags: [WASM, WebAssembly, Mono, .Net Framework]
