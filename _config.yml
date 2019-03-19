@@ -24,6 +24,10 @@ url: "https://codingmarvels.com" # the base hostname & protocol for your site, e
 github_username:  ghanavat
 google_analytics: UA-135613674-1
 
+social:
+  name: Saeed Ghanavat
+  links:
+     - https://www.linkedin.com/in/saeed-ghanavat-0a11353b/
 github:
   is_project_page: false
   owner_url: https://github.com/ghanavat
