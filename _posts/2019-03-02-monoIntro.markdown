@@ -12,7 +12,7 @@ commenting: open
 Mono is an implementation of .Net Framework, sponsored by Microsoft, and yes it is open source in case you were wondering! It is a solution which allows developers to make cross platform applications. The main C# compiler of Mono is MCS.
 <!--more-->
 
-# About MCS
+### About MCS
 
 According to <a href='https://www.mono-project.com/docs/about-mono/languages/csharp/' target='_blank'>Mono Project</a> documentation page, MCS is written in C# and uses heavily the .Net APIs. It covers all the features for majority versions of C#, but only partial support for C# 7.0:
 
