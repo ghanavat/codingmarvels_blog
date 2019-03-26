@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "Any suggestions?"
+title: "Your opinion"
 author: "Saeed Ghanavat"
 date: 2019-03-26 18:00:00
 categories: [Ideas, Suggestions, Opinions]
