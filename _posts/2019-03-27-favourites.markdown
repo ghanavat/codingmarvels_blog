@@ -9,6 +9,8 @@ excerpt_separator: <!--more-->
 commenting: open
 ---
 
+<img src='' alt='What is your opinion?'>
+
 Hello guys, and thanks again for visiting my blog!
 
 I would like to ask you a question. And would love to hear your answers and opinions.
