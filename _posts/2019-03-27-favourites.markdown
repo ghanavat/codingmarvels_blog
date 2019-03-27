@@ -11,7 +11,7 @@ commenting: open
 
 Hello guys, and thanks again for visiting my blog!
 
-I would like to ask you a question. And would love to see your answers and opinions.
+I would like to ask you a question. And would love to hear your answers and opinions.
 
 I assume that many of you including myself spending a lot time on the internet doing research etc. Of course you have ended up with situations in which you would need to save the links of the web pages you're visiting. For later retrieval/review. I mentioned links, because obviously links are the only way you can refer to your favourite web pages, later.
 
