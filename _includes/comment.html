@@ -4,6 +4,8 @@
 <a href="{{ comment.url }}" rel="nofollow">
   <img alt="Avatar for {{ comment.name | xml_escape }}" src="https://www.gravatar.com/avatar/{{ comment.avatar }}?s=64&amp;d=retro&amp;r=pg" srcset="https://www.gravatar.com/avatar/{{ comment.avatar }}?s=64&amp;d=retro&amp;r=pg" class="avatar avatar-64 photo" height="64" width="64">
 </a>
+{% else %}
+<img alt="Avatar for {{ comment.name | xml_escape }}" src="https://avatars.io/twitter//medium" srcset="https://avatars.io/twitter//medium" class="avatar avatar-64 photo" height="64" width="64">
 {% endif %}
 {% endif %}
 
