@@ -9,7 +9,7 @@ excerpt_separator: <!--more-->
 commenting: open
 ---
 
-<img src='\assets\imgs\yourOpinion\opinion-3' alt=''>
+<img src='\assets\imgs\yourOpinion\opinion-4.jpg' alt=''>
 
 Hello guys, and thanks again for visiting my blog!
 
