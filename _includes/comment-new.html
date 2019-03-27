@@ -1,47 +1,132 @@
 <h3>Respond to this</h3>
 <form action="/fake" method="post" id="commentform" class="form-horizontal">
   <fieldset id="commentfields">
+    <img class="" src="https://avatars.io/twitter//medium" id="avatarPreview" height="64" width="64" onerror="setAvatar(this, 1)"/>
     <input name="redirect" type="hidden" value="{{ site.url }}/thankyou">
     <input name="post_id" type="hidden" value="{{ slug }}">
-    <input name="comment-site" type="hidden" value="{{ site.url }}">    
+    <input name="comment-site" type="hidden" value="{{ site.url }}">
+    <input type="hidden" name="avatar" id="avatar" value="https://avatars.io/twitter//medium">
 	<table>
 		<tr>
-			<textarea name="message" id="message" placeholder="Continue the discussion." style="width: 100%; height: 100px"  required></textarea>
+			<textarea name="message" id="message" placeholder="Continue the discussion. (Required)" style="width: 100%; height: 100px"  required></textarea>
 		</tr>
 		<tr>			
-			<td><input type="text" name="name" id="name" placeholder="Display Name" style="height: 30px"/></td>
-			<td><input type="text" name="email" id="email" placeholder="Email address" style="height: 30px" /></td>
-			<td><button onclick="setupForm()" type="button" class="btn btn-primary" id="commentbutton" style="height: 30px">Leave response</button></td>
-			<!-- <td><input type="text" name="url" id="url" placeholder="Website url"/></td> -->
-		</tr>
+			<td><input type="text" name="name" id="name" placeholder="Display Name (Required)" style="height: 30px"/></td>
+      <td><input type="text" id="identity" onkeyup="identityChanged()" placeholder="email/@twitter/github" style="height: 30px"></td>
+      <td><input type="text" name="url" id="url" placeholder="Website (Optional)" style="height: 30px"/></td>
+      <td><button onclick="setupForm()" type="button" class="btn btn-primary" id="commentbutton" style="height: 30px">Leave response</button></td>
+    </tr>    
 	</table>
   </fieldset>
 </form>
 <script>
+    // Form controls variables
+    var controls = {
+      email: null,
+      status: null,
+      submitButton: null,
+      fields: null
+    };
+
+    // Global variables
+    var globalVariables = {
+      emailRegEx: /[^@\s]+@[^@\s]+\.[^@\s]+$/
+    };
+
+    $(document).ready(function(){
+      initControls();
+    });
+
+    // Initialising form controls
+    function initControls(){
+      controls.email = $('#email');
+      controls.status = document.getElementById('commentstatus');
+      controls.submitButton = document.getElementById('commentbutton');
+      controls.fields = document.getElementById('commentfields');
+      controls.emailRegex = /[^@\s]+@[^@\s]+\.[^@\s]+$/;
+
+      // Make sure the comment status message is empty.
+      controls.status.innerText = '';      
+    }
+
     function setupForm() {
-      var status = document.getElementById('commentstatus')
-      status.innerText = ''
+      controls.status.innerText = '';
 
-      var requiredIds = [ 'message', 'email', 'name']
-      var missing = requiredIds.filter(id => document.getElementById(id).value.length < 3)
+      var requiredIds = [ 'message', 'name', 'identity'];
+      var missing = requiredIds.filter(id => document.getElementById(id).value.length < 3);
       if (missing.length > 0) {
-        status.innerText = 'Some required fields are missing - (' + missing.join(', ') + ')'
-        return
+        controls.status.innerText = 'Some required fields are missing - (' + missing.join(', ') + ')';
+
+        // Check if the email is in the right format. 
+        // If not, append the email validation message to the current message
+        // if (controls.email.val() !== ''
+        //   && !globalVariables.emailRegEx.test(controls.email.val())){
+        //     controls.status.innerText = controls.status.innerText + '- \n Email is not in a correct format!';
+        // }
+        return;
       }
 
-      var button = document.getElementById('commentbutton')
-      if (button.innerText != 'Confirm comment') {
-        button.innerText = 'Confirm comment'
-        return
+      if (controls.submitButton.innerText != 'Confirm comment') {
+        controls.submitButton.innerText = 'Confirm comment';
+        return;
       }
 
-      var form = document.getElementById('commentform')
-      form.action = '{{ site.comments.receiver }}'
-      button.innerText = 'Posting...'
-      button.disabled = true
-      form.submit()
-      var fields = document.getElementById('commentfields')                                         
-      fields.disabled = true
+      var form = document.getElementById('commentform');
+      form.action = '{{ site.comments.receiver }}';
+      controls.submitButton.innerText = 'Posting...';
+      controls.submitButton.disabled = true;
+      form.submit();
+
+      //var fields = document.getElementById('commentfields');
+      controls.fields.disabled = true;
+    }
+
+    // Email validation
+    // function validateEmail(){
+    //   controls.status.innerText = '';      
+
+    //   if (controls.email.val() !== '' && !globalVariables.emailRegEx.test(controls.email.val())){
+    //     controls.status.innerText = 'Email is not in a correct format!';
+    //     console.log(controls.status.innerText);
+    //     return;
+    //   }
+    //   controls.status.innerHTML = '';
+    // }
+
+    function identityChanged() {
+      var image = document.getElementById('avatarPreview');
+      image.default = image.default || image.src;
+      image.possible = buildPossibleAvatars(document.getElementById('identity').value);
+      image.currentIndex = 0;
+      setAvatar(image);
+    }
+
+    function setAvatar(image, increment) {
+      if (increment) {
+        image.currentIndex += increment;
+      }
+
+      image.src = image.currentIndex < image.possible.length
+        ? image.possible[image.currentIndex]
+        : image.default;
+
+      document.getElementById('avatar').value = image.src;
+    }
+
+    function buildPossibleAvatars(identity) {
+      var possibleAvatars = [];
+
+      if (identity.match(globalVariables.emailRegEx)) {
+        possibleAvatars.push('https://secure.gravatar.com/avatar/' + md5(identity) + '?s=80&d=identicon&r=pg');
+      }
+
+      if (identity.indexOf('@') < 0) {
+        possibleAvatars.push('https://github.com/' + identity + '.png');
+      }
+
+      possibleAvatars.push('https://avatars.io/twitter/' + identity + '/medium');
+
+      return possibleAvatars;
     }
   </script>
 <div id="commentstatus" style="clear:both" class="status"></div>
