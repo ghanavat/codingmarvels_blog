@@ -8,7 +8,7 @@ commenting: open
 excerpt_separator: <!--more-->
 ---
 
-<img src='\assets\imgs\briefStory\briefStory-1.jpg' alt='Saeed Ghanavat - Brief story behind my blog' />
+<img class="post-image" src='\assets\imgs\briefStory\briefStory-1.jpg' alt='Saeed Ghanavat - Brief story behind my blog' />
 
 I have been thinking of creating my own blog for more than it needed. Part of the problem was the complication. I needed something quick. Something that I could quickly share my ideas and opinions, as soon as I wrote them. Currently there are countless number of services which provide an environment where you can create and setup your website/blog. I am not going to mention their brands obviously (some of them are great to be fair). But they are far more time consuming that I was planning for.
 <!--more-->

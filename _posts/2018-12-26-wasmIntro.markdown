@@ -10,6 +10,9 @@ excerpt_separator: <!--more-->
 ---
 
 I think everyone or every beginner to WASM would be struggling a little bit to understand or make sense of it at the first place. This is including myself by the way.
+
+<img class="post-image" src='\assets\imgs\wasm\wasm-1.jpg' alt='Saeed Ghanavat - Introduction to WASM' />
+
  <!--more-->
 
 There are plenty different websites with similar topic as mine here. My goal is to give you guys very brief introduction to WASM. By all means you can refer to the <a href='https://webassembly.org/' target='_blank'>WebAssembly</a> website and learn more. If you like to delve into more technical discussion, refer to the <a href='https://developer.mozilla.org' target='_blank'>MDN</a> site and navigate to the WebAssembly topic.
@@ -26,7 +29,7 @@ As you know, every programming language gets translated to machine code in order
 
 Take a look at the below simple diagram. It's a high level picture of how WASM works:
 
-![WASM high level diagram](/assets/imgs/WASM_HighLevel_Diagram.jpg)
+![WASM high level diagram](/assets/imgs/wasm/WASM_HighLevel_Diagram.jpg)
 
 Now with the WASM within the browsers, the virtual machine I have mentioned earlier, can now load and run two types of code, JavaScript and WASM. How cool is that!
 

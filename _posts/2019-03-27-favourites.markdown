@@ -11,8 +11,8 @@ commenting: open
 
 Hello guys, and thanks again for visiting my blog!
 
-<img class="post-picture" src='\assets\imgs\yourOpinion\opinion-4.jpg' alt=''>
-<span class="picture-caption">Picking your brain now!</span>
+<img class="post-image" src='\assets\imgs\yourOpinion\opinion-4.jpg' alt='Saeed Ghanavat - Asking for your opinion on how you save your web links.' />
+<!-- <span class="picture-caption">Picking your brain now!</span> -->
 
 I would like to ask you a question. And would love to hear your answers and opinions.
 
