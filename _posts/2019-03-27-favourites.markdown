@@ -9,7 +9,7 @@ excerpt_separator: <!--more-->
 commenting: open
 ---
 
-<img src='' alt='What is your opinion?'>
+<img src='' alt=''>
 
 Hello guys, and thanks again for visiting my blog!
 
