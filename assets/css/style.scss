@@ -121,7 +121,6 @@ header ul a:hover{
     line-height: 1;
 }
 .post-title a{
-    //color: #222;
     color: #569cd6;
 }
 .post-title a:hover{
@@ -141,18 +140,29 @@ header ul a:hover{
 }
 .post-content{
     margin-bottom: 30px;
-    line-height: 33px;    
+    line-height: 33px;
 }
-.post-picture{
-    max-width: 100%;
+.post-content-main{
+    margin-bottom: 30px;
+    line-height: 33px;
+}
+.post-content-main img{
+    width: 100%;
     vertical-align: middle;
-    //height: 550px;
+}
+.post-content img{
+    width: 100%;
+    vertical-align: middle;
 }
 .picture-caption{
     font-size: .6em;
     color: #999;
     display: block;
     font-style: italic;
+}
+.post-content img::before {
+    content: '\f05a';
+    left: 0;
 }
 i{
     color: black;
