@@ -10,6 +10,9 @@ commenting: open
 ---
 
 If you are landing on this post from the previous one(s), you are familiar with WASM and Mono, hopefully! In the previous post where I have introduced Mono, [About Mono! An implementation of .Net Framework]({% post_url 2019-03-02-monoIntro %}), you have noticed that I didn’t take it any further than ‘How to Use it’. Well, this is because I thought that this topic deserves its own accommodation. So here we are!
+
+<img class="post-image" src='\assets\imgs\BlazorIntro\gameChanger.jpg' alt='Saeed Ghanavat - About Blazor - A game changer platform' />
+
 <!--more-->
 # What is Blazor?
 
