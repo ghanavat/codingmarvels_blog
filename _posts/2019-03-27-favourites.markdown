@@ -9,10 +9,10 @@ excerpt_separator: <!--more-->
 commenting: open
 ---
 
+Hello guys, and thanks again for visiting my blog!
+
 <img class="post-picture" src='\assets\imgs\yourOpinion\opinion-4.jpg' alt=''>
 <span class="picture-caption">Picking your brain now!</span>
-
-Hello guys, and thanks again for visiting my blog!
 
 I would like to ask you a question. And would love to hear your answers and opinions.
 
