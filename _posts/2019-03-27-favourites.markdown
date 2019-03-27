@@ -10,6 +10,7 @@ commenting: open
 ---
 
 <img class="post-picture" src='\assets\imgs\yourOpinion\opinion-4.jpg' alt=''>
+<span class="picture-caption">Picking your brain now!</span>
 
 Hello guys, and thanks again for visiting my blog!
 
