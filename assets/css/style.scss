@@ -144,8 +144,9 @@ header ul a:hover{
     line-height: 33px;    
 }
 .post-picture{
-    width: 550px;
-    height: 550px;
+    max-width: 750px;
+    vertical-align: middle;
+    //height: 550px;
 }
 .picture-caption{
     font-size: .6em;
