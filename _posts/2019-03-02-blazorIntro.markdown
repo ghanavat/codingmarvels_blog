@@ -42,7 +42,7 @@ Again it’s very easy on the paper. Take a look at the image below:
 
 Did you understand what it is saying? I didn’t. In my view, this image is rather vague and unclear. Let me open it up a bit for you guys. First, let me remind you of this, Blazor is powered by C# (I hope it’ll support other programming languages) and Razor.
 
-Remember Mono? Cool. Mono engineers and developer are busy working on bringing the .Net runtime to the web using WASM. <a href="https://www.mono-project.com/news/2018/01/16/mono-static-webassembly-compilation/" target="_blank">You can read more about it here</a>. Blazor builds on their work to create a rich client-side (and server-side!) SPA using .Net.
+Remember Mono? Cool. Mono engineers and developers are busy working on bringing the .Net runtime to the web using WASM. <a href="https://www.mono-project.com/news/2018/01/16/mono-static-webassembly-compilation/" target="_blank">You can read more about it here</a>. Blazor builds on their work to create a rich client-side (and server-side!) SPA using .Net.
 
 ### Client-Side Blazor
 

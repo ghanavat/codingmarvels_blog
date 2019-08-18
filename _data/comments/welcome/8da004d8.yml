@@ -1,0 +1,5 @@
+id: 8da004d8
+date: 2019-07-15T09:45:51.1917921Z
+name: Saeed
+avatar: https://avatars.io/twitter/dev_projects@ghanavat./medium
+message: Vincent, thanks for your comment.The reply functionality is being implemented. In regards to your second point, yes I'm aware of that, and I'm happy with it. Staticman didn't look like a bad solution at all. However setting it up for my blog was time consuming and I could not afford that. Jekyll-Comments is best suited for what I need for now. It uses pretty much the same approach compare to Staticman.
