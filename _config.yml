@@ -24,6 +24,7 @@ url: "https://codingmarvels.com" # the base hostname & protocol for your site, e
 github_username:  ghanavat
 google_analytics: UA-135613674-1
 
+#Social settings
 social:
   name: Saeed Ghanavat
   links:
@@ -37,18 +38,23 @@ github:
 markdown: kramdown
 theme: jekyll-theme-minimal
 
+#Header and other pages
 header_pages:
   - title: About
     url: /about/
   - title: Contact me
     url: /contactMe/
 
+#Plugins
 plugins:
   - jekyll-feed
   - jekyll-seo-tag
 
+# Post settings
 show_excerpts: true
+newPostTemporaryPlaceHolder: "Being written..."
 
+# Jekyll comment settings
 comments:
   enabled: true
   show_count: true
@@ -63,14 +69,14 @@ defaults:
     type: pages
    values:
     layout: page
-    author: saeedG
+    author: saeed Ghanavat
  -
   scope:
    path: '_posts'
    type: posts
   values:
    layout: post
-   author: saeedG
+   author: Saeed Ghanavat
   authors:
    saeedg:
      name: Saeed Ghanavat
