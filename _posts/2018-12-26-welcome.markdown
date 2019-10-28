@@ -6,7 +6,12 @@ date:   2018-12-26 23:01:00
 categories: welcome
 commenting: open
 excerpt_separator: <!--more-->
+newPost: {{ site.newPostTemporaryPlaceHolder }}
 ---
+
+{% if page.newPost %}
+    <h1>{{ page.newPost }}</h1>
+{% endif %}
 
 Hello, thanks for visiting my blog. I know it's pretty quiet here at the moment. This is because I am setting up the gears and putting up things where they should be.
 <!--more-->
