@@ -14,29 +14,36 @@
 # You can create any custom variable you would like, and they will be accessible
 # in the templates via {{ site.myvariable }}.
 title: Coding Marvels
-email: codingmarvels@ghanavat.co.uk
+email: codingmarvels@ghanavats.co.uk
 show_description: false
 description: >- # this means to ignore newlines until "baseurl:"
 baseurl: "/" # the subpath of your site, e.g. /blog
 url: "https://codingmarvels.com" # the base hostname & protocol for your site, e.g. https://codingmarvels.com
 #footerEmailTitle: "Contact me:"
 #twitter_username: Maybe!
-github_username:  ghanavat
+#github_username:  ghanavat
 google_analytics: UA-135613674-1
 
+#Theme configs
+paginate: 10 # pagination based on number of posts
+paginate_path: "page:num"
+exclude: ["README.md"] # files to exclude
+highlighter: rouge
+sidebar_background_image:
+
 #Social settings
-social:
-  name: Saeed Ghanavat
-  links:
-     - https://www.linkedin.com/in/saeed-ghanavat-0a11353b/
-github:
-  is_project_page: false
-  owner_url: https://github.com/ghanavat
-  owner_name: Saeed Ghanavat
+# social:
+#   name: Saeed Ghanavat
+#   links:
+#      - https://www.linkedin.com/in/saeed-ghanavat-0a11353b/
+# github:
+#   is_project_page: false
+#   owner_url: https://github.com/ghanavat
+#   owner_name: Saeed Ghanavat
 
 # Build settings
 markdown: kramdown
-theme: jekyll-theme-minimal
+#theme: jekyll-theme-minimal
 
 #Header and other pages
 header_pages:
@@ -45,10 +52,17 @@ header_pages:
   - title: Contact me
     url: /contactMe/
 
+BASE_PATH:
+
 #Plugins
 plugins:
-  - jekyll-feed
+  #- jekyll-feed
   - jekyll-seo-tag
+  - jekyll-paginate
+
+rss_path: feed.xml
+categories_path: categories.html
+tags_path: tags.html
 
 # Post settings
 show_excerpts: true
@@ -59,7 +73,7 @@ comments:
   enabled: true
   show_count: true
   receiver: https://codingmarvelscommenting.azurewebsites.net/api/PostComment
-  
+
 emptyArray: []
 
 defaults: 
@@ -80,8 +94,19 @@ defaults:
   authors:
    saeedg:
      name: Saeed Ghanavat
-     email: codingmarvels@ghanavat.co.uk
+     email: codingmarvels@ghanavats.co.uk
      url: https://codingmarvels.com     
 
 exclude:
   - vendor
+
+#Author configs for the footer
+author:
+  name: Saeed Ghanavat
+  email: codingmarvels@ghanavats.co.uk
+  github: ghanavat
+  #twitter: dbtek
+  #pinterest: asd123
+  linkedin: saeed-ghanavat-0a11353b
+  #bio: Your stylish, minimalist theme!
+  #email_md5: 726351295ec82e145928582f595aa3aa

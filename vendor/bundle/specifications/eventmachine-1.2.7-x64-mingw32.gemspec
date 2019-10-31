@@ -17,10 +17,10 @@ Gem::Specification.new do |s|
   s.homepage = "http://rubyeventmachine.com".freeze
   s.licenses = ["Ruby".freeze, "GPL-2.0".freeze]
   s.rdoc_options = ["--title".freeze, "EventMachine".freeze, "--main".freeze, "README.md".freeze, "-x".freeze, "lib/em/version".freeze, "-x".freeze, "lib/jeventmachine".freeze]
-  s.rubygems_version = "2.7.6".freeze
+  s.rubygems_version = "3.0.3".freeze
   s.summary = "Ruby/EventMachine library".freeze
 
-  s.installed_by_version = "2.7.6" if s.respond_to? :installed_by_version
+  s.installed_by_version = "3.0.3" if s.respond_to? :installed_by_version
 
   if s.respond_to? :specification_version then
     s.specification_version = 4

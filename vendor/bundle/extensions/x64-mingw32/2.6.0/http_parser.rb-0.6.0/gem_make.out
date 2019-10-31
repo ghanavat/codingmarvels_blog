@@ -1,5 +1,5 @@
 current directory: D:/Development/Workstation/Repository/codingmarvels_blog/vendor/bundle/gems/http_parser.rb-0.6.0/ext/ruby_http_parser
-C:/Ruby26-x64/bin/ruby.exe -I C:/Ruby26-x64/lib/ruby/2.6.0 -r ./siteconf20190914-10360-1cigfp8.rb extconf.rb
+C:/Ruby26-x64/bin/ruby.exe -I C:/Ruby26-x64/lib/ruby/2.6.0 -r ./siteconf20191028-8744-1czp7y2.rb extconf.rb
 creating Makefile
 
 current directory: D:/Development/Workstation/Repository/codingmarvels_blog/vendor/bundle/gems/http_parser.rb-0.6.0/ext/ruby_http_parser
@@ -14,4 +14,4 @@ linking shared-object ruby_http_parser.so
 
 current directory: D:/Development/Workstation/Repository/codingmarvels_blog/vendor/bundle/gems/http_parser.rb-0.6.0/ext/ruby_http_parser
 make "DESTDIR=" install
-/usr/bin/install -c -m 0755 ruby_http_parser.so ./.gem.20190914-10360-1tsbqi4
+/usr/bin/install -c -m 0755 ruby_http_parser.so ./.gem.20191028-8744-ar7swt
