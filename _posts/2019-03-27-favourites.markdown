@@ -3,8 +3,8 @@ layout: post
 title: "Your opinion"
 author: "Saeed Ghanavat"
 date: 2019-03-26 18:00:00
-categories: [Ideas, Suggestions, Opinions]
-tags: [Ideas, Suggestions]
+categories: [Suggestions, Opinions]
+tags: [Suggestions]
 excerpt_separator: <!--more-->
 commenting: open
 ---
