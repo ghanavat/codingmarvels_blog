@@ -72,6 +72,7 @@ In 2017 they have introduced another compilation package of .Net code, static co
 This was an impractical compilation tactic for gaming consoles and perhaps many other platforms. Why? Because, static compilation does not have the ability to support dynamic code generation. It compiles the whole source code into the machine code at once before the application is executed.
 
 The lack of dynamic support still was a bummer. Frankly, Mono was missing many interesting uses of .Net. This was another small sub-topic that I could not understand properly. Bringing Mono into WebAssembly was not the only project at that time. It was being used in many other projects; Such as, for the first time programmers were able to develop games for Xbox and PlayStation. The issue with the absence of dynamic capabilities was preventing game developers to adjust and tweak their code without having to re-compile the whole project.
+
 If you have heard of Continues IDE (Link), you know exactly how important the support of dynamic programming was for Mono. When Frank Krueger was building his Continues IDE he wanted to have the ability of dynamic support, Mono was not going to be an option as per the lack of dynamic support. So, he had to write his own interpreter using F# to compile the code.
 
 There is something popped into my head as I was writing the above paragraph, I think it is important to mention it here. In relation to Mono, the interpreter was playing a big role. Why?
