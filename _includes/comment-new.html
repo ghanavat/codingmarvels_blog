@@ -20,8 +20,6 @@
   </fieldset>
 </form>
 <script>
-  (function($) {
-
     // Form controls variables
     var controls = {
       email: null,
@@ -35,15 +33,12 @@
       emailRegEx: /[^@\s]+@[^@\s]+\.[^@\s]+$/
     };
 
-    $(document).ready(function(){
-      initControls();
-    });
+    // $(document).ready(function(){
+    //   initControls();
+    // });
 
     // Initialising form controls
     function initControls(){
-	// Testing
-	console.log("Initialising-SAEED");
-	    
       controls.email = $('#email');
       controls.status = document.getElementById('commentstatus');
       controls.submitButton = document.getElementById('commentbutton');
@@ -55,6 +50,7 @@
     }
 
     function setupForm() {
+      initControls();
       controls.status.innerText = '';
 
       var requiredIds = [ 'message', 'name', 'identity'];
@@ -133,8 +129,5 @@
 
       return possibleAvatars;
     }
-
-  })(jQuery);
-    
   </script>
 <div id="commentstatus" style="clear:both" class="status"></div>
