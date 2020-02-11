@@ -20,6 +20,8 @@
   </fieldset>
 </form>
 <script>
+  (function($) {
+
     // Form controls variables
     var controls = {
       email: null,
@@ -128,5 +130,8 @@
 
       return possibleAvatars;
     }
+
+  })(jQuery);
+    
   </script>
 <div id="commentstatus" style="clear:both" class="status"></div>
