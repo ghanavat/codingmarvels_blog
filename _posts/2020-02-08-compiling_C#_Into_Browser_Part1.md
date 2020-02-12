@@ -10,7 +10,7 @@ excerpt_separator: <!--more-->
 <br>
 It has been quite a while since Grace Hopper and her team developed the first compiler back in 1952. She was the one who conceived an idea of developing a new programming language close to English words, which was led to the implementation of COBOL. Her work was continued on developing the compiler as a part of COBOL programme which was able to translate codes written in COBOL (as English statement) into machine code. Before, it was all done by symbol manipulators, and not many people could do that at that time. 
 
-Why did I put this here? Just to appreciate how far we have come since first compiler was coined.
+Why did I put this here? Just to appreciate how far we have come since the first compiler was coined.
 
 ![Compiling C# into browser - Part 1 - codingmarvels.com](/assets/imgs/compilingCsharpPart1/compiler_post_part1.jpg "Compiling C# into browser - Part 1")
 <!--more-->
@@ -21,7 +21,7 @@ This part will be about the over view of the compilation milestone. To do this a
 
 Blazor compiles C# code via something. There should be something, right? WebAssembly, I have talked about it here, please make sure you are familiar with it before continue reading this article.
 
-As mentioned on my previous post about [Blazor introduction]({% post_url 2019-03-02-blazorIntro %}), there are two type of hosting models for Blazor, client-side application, known as Blazor WebAssembly these days and server-side application, known as Blazor Server. We are talking about Blazor WebAssembly in these series of articles. This means, hosting your application on the client-side. If you are not sure what I am talking about, this is it; this is the moment that you have realised that you are going to struggle a bit to understand the context going further! Please visit my previous post as mentioned, [Blazor introduction]({%post_url 2019-03-02-blazorIntro%}) and read every word, and then come back.
+As mentioned on my previous post about [Blazor introduction]({% post_url 2019-03-02-blazorIntro %}), there are two type of hosting models for Blazor, client-side application, known as Blazor WebAssembly these days and server-side application, known as Blazor Server. We are talking about Blazor WebAssembly in this series of articles. This means, hosting your application on the client-side. If you are not sure what I am talking about, this is it; this is the moment that you have realised that you are going to struggle a bit to understand the context going further! Please visit my previous post as mentioned, [Blazor introduction]({%post_url 2019-03-02-blazorIntro%}) and read every word, and then come back.
 
 # The beginning
 
