@@ -38,13 +38,13 @@ The second prototype compiled only Mono C runtime without its class libraries in
 
 # Bootstrapping
 
-The main target was still bringing Mono to the WebAssembly. It began when Mono developers wrote their own interpreter for .Net, called mint. This interpreter meant to be a temporary solution until a Just-in-Time (JIT) compiler they were working on was ready.
+The main target was still bringing Mono to the WebAssembly. It began when Mono developers wrote their own interpreter for .Net, called <em>mint</em>. This interpreter meant to be a temporary solution until a Just-in-Time (JIT) compiler they were working on was ready.
 
-If you are familiar with bootstrapping, then you are fine, you know what I mean. But if you are not, bootstrapping is self-starting process. In this scenario, when Mono developers were developing Just-in-Time (JIT) compiler, it obviously needed to be compiled too, but there was nothing to compile it (on the other hand, it needed to compile itself). So, they wrote mint in order to compile JIT that they were writing.
+If you are familiar with bootstrapping, then you are fine, you know what I mean. But if you are not, bootstrapping is self-starting process. In this scenario, when Mono developers were developing Just-in-Time (JIT) compiler, it obviously needed to be compiled too, but there was nothing to compile it (on the other hand, it needed to compile itself). So, they wrote <em>mint</em> in order to compile JIT that they were writing.
 
-The interpreter, mint, remained active and continued to exist alongside JIT as it was being written, until the day JIT engine was fully functional. As mint only written to serve one purpose, it never evolved or upgraded, which had brought new challenges onto the field.
+The interpreter, <em>mint</em>, remained active and continued to exist alongside JIT as it was being written, until the day JIT engine was fully functional. As <em>mint</em> only written to serve one purpose, it never evolved or upgraded, which had brought new challenges onto the field.
 
-They (Mono engineers and developers obviously) could not cope with the engineering cost, especially when <em>generics</em> were introduced by Microsoft. The interpreter, mint, could not deal with generics, because it was not up-to-date and did not have what was necessary to understand and emit code for generic methods and classes. This had led to the birth of their full static compiler of .Net code.
+They (Mono engineers and developers obviously) could not cope with the engineering cost, especially when <em>generics</em> were introduced by Microsoft. The interpreter, <em>mint</em>, could not deal with generics, because it was not up-to-date and did not have what was necessary to understand and emit code for generic methods and classes. This had led to the birth of their full static compiler of .Net code.
 
 I have mentioned generics; I hope it did move something in you by mentioning it abruptly! Something like:
 
@@ -61,9 +61,9 @@ public class Generic<T>
 }
 ```
 
-I confess that I did not understand why Mono interpreter, mint, failed to compile generics, which had led to its end of duty. I was genuinely reluctant to continue writing this article until I was satisfied and it was clear to me first before I put it here.
+I confess that I did not understand why Mono interpreter, <em>mint</em>, failed to compile generics, which had led to its end of duty. I was genuinely reluctant to continue writing this article until I was satisfied and it was clear to me first before I put it here.
 
-For a compiler or interpreter, being able to translate generic methods and classes, it must change a lot to make room for generics. This is because they touch so many parts of the code we write. The interpreter, mint was written for bootstrapping, definitely not a capable interpreter to be able to easily adapt to the new changes, yet! Even for the JIT, tremendous amount of extra work was needed, because additional IL Instructions were necessary to be implemented, in order to enable JIT to access the extra information it needed to produce code for generic methods.
+For a compiler or interpreter, being able to translate generic methods and classes, it must change a lot to make room for generics. This is because they touch so many parts of the code we write. The interpreter, <em>mint</em> was written for bootstrapping, definitely not a capable interpreter to be able to easily adapt to the new changes, yet! Even for the JIT, tremendous amount of extra work was needed, because additional IL Instructions were necessary to be implemented, in order to enable JIT to access the extra information it needed to produce code for generic methods.
 
 # Static compilation
 
@@ -75,7 +75,7 @@ This was an impractical compilation tactic for gaming consoles and perhaps many 
 
 The lack of dynamic support still was a bummer. Frankly, Mono was missing many interesting uses of .Net. This was another small sub-topic that I could not understand properly. Bringing Mono into WebAssembly was not the only project at that time. It was being used in many other projects; Such as, for the first time programmers were able to develop games for Xbox and PlayStation. The issue with the absence of dynamic capabilities was preventing game developers to adjust and tweak their code without having to re-compile the whole project.
 
-If you have heard of Continues IDE (Link), you know exactly how important the support of dynamic programming was for Mono. When Frank Krueger was building his Continues IDE he wanted to have the ability of dynamic support, Mono was not going to be an option as per the lack of dynamic support. So, he had to write his own interpreter using F# to compile the code.
+If you have heard of [Continues IDE](http://continuous.codes/), you know exactly how important the support of dynamic programming was for Mono. When Frank Krueger was building his Continues IDE he wanted to have the ability of dynamic support, Mono was not going to be an option as per the lack of dynamic support. So, he had to write his own interpreter using F# to compile the code.
 
 There is something popped into my head as I was writing the above paragraph, I think it is important to mention it here. In relation to Mono, the interpreter was playing a big role. Why?
 
