@@ -33,7 +33,8 @@ Everything started with an experimental project to bring Mono to the WebAssembly
 
 The second prototype compiled only Mono C runtime without its class libraries into WebAssembly and then used IL (Intermediate Language) interpreter to run managed code. Although the download size of .wasm file for the browser was much smaller (still not fully optimised though), there was another big challenge ahead, the performance. How did this actually happen? You may also wonder what IL interpreter is too. Alright, bit by bit!
 
-IL interpreter appears to be in between step when your code is being compiled into machine code (assembly language). Basically its job is the same as a compiler; translates high-level code into machine code ***DURING*** the run time of the application; however a compiler does it before the application is executed.
+>#### Very short description about IL
+>IL interpreter appears to be in between step when your code is being compiled into machine code (assembly language). Basically its job is the same as a compiler; translates high-level code into machine code ***DURING*** the run time of the application; however a compiler does it before the application is executed.
 
 # Bootstrapping
 
