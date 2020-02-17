@@ -75,7 +75,7 @@ This was an impractical compilation tactic for gaming consoles and perhaps many 
 
 The lack of dynamic support still was a bummer. Frankly, Mono was missing many interesting uses of .Net. This was another small sub-topic that I could not understand properly. Bringing Mono into WebAssembly was not the only project at that time. It was being used in many other projects; Such as, for the first time programmers were able to develop games for Xbox and PlayStation. The issue with the absence of dynamic capabilities was preventing game developers to adjust and tweak their code without having to re-compile the whole project.
 
-If you have heard of [Continues IDE](http://continuous.codes/), you know exactly how important the support of dynamic programming was for Mono. When Frank Krueger was building his Continues IDE he wanted to have the ability of dynamic support, Mono was not going to be an option as per the lack of dynamic support. So, he had to write his own interpreter using F# to compile the code.
+If you have heard of [Continues IDE](http://continuous.codes/){:target="_blank"}, you know exactly how important the support of dynamic programming was for Mono. When Frank Krueger was building his Continues IDE he wanted to have the ability of dynamic support, Mono was not going to be an option as per the lack of dynamic support. So, he had to write his own interpreter using F# to compile the code.
 
 There is something popped into my head as I was writing the above paragraph, I think it is important to mention it here. In relation to Mono, the interpreter was playing a big role. Why?
 
