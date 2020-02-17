@@ -15,7 +15,7 @@ Why did I put this here? Just to appreciate how far we have come since the first
 ![Compiling C# into browser - Part 1 - codingmarvels.com](/assets/imgs/compilingCsharpPart1/compiler_post_part1.jpg "Compiling C# into browser - Part 1")
 <!--more-->
 
-I have started a series of articles focusing on something I have never focused before! the mechanism of compiling C# into the browser, as per the title here. I wanted to learn how it works and I wanted to learn the details of how it works. It all started when I learnt about Blazor. There is a lot to cover and talk about, so I decided to break the topics into a few different parts. Each part will focus on a different aspect of the main topic.
+I have started a series of articles focusing on something I have never focused before, the mechanism of compiling C# into the browser, as per the title here. I wanted to learn how it works and I wanted to learn the details of how it works. It all started when I learnt about Blazor. There is a lot to cover and talk about, so I decided to break the topics into a few different parts. Each part will focus on a different aspect of the main topic.
 
 This part will be about the over view of the compilation milestone. To do this accurately, I would need to start from the beginning, I mean the history and where things began. I hope you will enjoy reading it, I certainly did! I will try to explain all new terminologies as soon as they have been mentioned in a short paragraph.
 
