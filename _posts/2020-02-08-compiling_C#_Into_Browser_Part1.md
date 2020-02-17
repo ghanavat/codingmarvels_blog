@@ -21,7 +21,7 @@ This part will be about the over view of the compilation milestone. To do this a
 
 Blazor compiles C# code via something. There should be something, right? WebAssembly, I have talked about it here, please make sure you are familiar with it before continue reading this article.
 
-As mentioned on my previous post about [Blazor introduction]({% post_url 2019-03-02-blazorIntro %}), there are two type of hosting models for Blazor, client-side application, known as Blazor WebAssembly these days and server-side application, known as Blazor Server. We are talking about Blazor WebAssembly in this series of articles. This means, hosting your application on the client-side. If you are not sure what I am talking about, this is it; this is the moment that you have realised that you are going to struggle a bit to understand the context going further! Please visit my previous post as mentioned, [Blazor introduction]({%post_url 2019-03-02-blazorIntro%}) and read every word, and then come back.
+As mentioned on my previous post about [Blazor introduction]({% post_url 2019-03-02-blazorIntro %}){:target="_blank"}, there are two type of hosting models for Blazor, client-side application, known as Blazor WebAssembly these days and server-side application, known as Blazor Server. We are talking about Blazor WebAssembly in this series of articles. This means, hosting your application on the client-side. If you are not sure what I am talking about, this is it; this is the moment that you have realised that you are going to struggle a bit to understand the context going further! Please visit my previous post as mentioned, [Blazor introduction]({%post_url 2019-03-02-blazorIntro%}){:target="_blank"} and read every word, and then come back.
 
 # The beginning
 
