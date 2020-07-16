@@ -10,18 +10,18 @@ excerpt_separator: <!--more-->
 <br>
 It has been quite a while since Grace Hopper and her team developed the first compiler back in 1952. She was the one who conceived an idea of developing a new programming language close to English words, which was led to the implementation of COBOL. Her work was continued on developing the compiler as a part of COBOL programme which was able to translate codes written in COBOL (as English statement) into machine code. Before, it was all done by symbol manipulators, and not many people could do that at that time. 
 
-Why did I put this here? Just to appreciate how far we have come since first compiler was coined.
+Why did I put this here? Just to appreciate how far we have come since the first compiler was coined.
 
 ![Compiling C# into browser - Part 1 - codingmarvels.com](/assets/imgs/compilingCsharpPart1/compiler_post_part1.jpg "Compiling C# into browser - Part 1")
 <!--more-->
 
-I have started a series of articles focusing on something I have never focused before! the mechanism of compiling C# into the browser, as per the title here. I wanted to learn how it works and I wanted to learn the details of how it works. It all started when I learnt about Blazor. There is a lot to cover and talk about, so I decided to break the topics into a few different parts. Each part will focus on a different aspect of the main topic.
+I have started a series of articles focusing on something I have never focused before, the mechanism of compiling C# into the browser, as per the title here. I wanted to learn how it works and I wanted to learn the details of how it works. It all started when I learnt about Blazor. There is a lot to cover and talk about, so I decided to break the topics into a few different parts. Each part will focus on a different aspect of the main topic.
 
 This part will be about the over view of the compilation milestone. To do this accurately, I would need to start from the beginning, I mean the history and where things began. I hope you will enjoy reading it, I certainly did! I will try to explain all new terminologies as soon as they have been mentioned in a short paragraph.
 
 Blazor compiles C# code via something. There should be something, right? WebAssembly, I have talked about it here, please make sure you are familiar with it before continue reading this article.
 
-As mentioned on my previous post about [Blazor introduction]({% post_url 2019-03-02-blazorIntro %}), there are two type of hosting models for Blazor, client-side application, known as Blazor WebAssembly these days and server-side application, known as Blazor Server. We are talking about Blazor WebAssembly in these series of articles. This means, hosting your application on the client-side. If you are not sure what I am talking about, this is it; this is the moment that you have realised that you are going to struggle a bit to understand the context going further! Please visit my previous post as mentioned, [Blazor introduction]({%post_url 2019-03-02-blazorIntro%}) and read every word, and then come back.
+As mentioned on my previous post about [Blazor introduction]({% post_url 2019-03-02-blazorIntro %}){:target="_blank"}, there are two type of hosting models for Blazor, client-side application, known as Blazor WebAssembly these days and server-side application, known as Blazor Server. We are talking about Blazor WebAssembly in this series of articles. This means, hosting your application on the client-side. If you are not sure what I am talking about, this is it; this is the moment that you have realised that you are going to struggle a bit to understand the context going further! Please visit my previous post as mentioned, [Blazor introduction]({%post_url 2019-03-02-blazorIntro%}){:target="_blank"} and read every word, and then come back.
 
 # The beginning
 
@@ -33,17 +33,18 @@ Everything started with an experimental project to bring Mono to the WebAssembly
 
 The second prototype compiled only Mono C runtime without its class libraries into WebAssembly and then used IL (Intermediate Language) interpreter to run managed code. Although the download size of .wasm file for the browser was much smaller (still not fully optimised though), there was another big challenge ahead, the performance. How did this actually happen? You may also wonder what IL interpreter is too. Alright, bit by bit!
 
-IL interpreter appears to be in between step when your code is being compiled into machine code (assembly language). Basically its job is the same as a compiler; translates high-level code into machine code ***DURING*** the run time of the application; however a compiler does it before the application is executed.
+>#### Very short description about IL
+>IL interpreter appears to be in between step when your code is being compiled into machine code (assembly language). Basically its job is the same as a compiler; translates high-level code into machine code ***DURING*** the run time of the application; however a compiler does it before the application is executed.
 
 # Bootstrapping
 
-The main target was still bringing Mono to the WebAssembly. It began when Mono developers wrote their own interpreter for .Net, called mint. This interpreter meant to be a temporary solution until a Just-in-Time (JIT) compiler they were working on was ready.
+The main target was still bringing Mono to the WebAssembly. It began when Mono developers wrote their own interpreter for .Net, called <em>mint</em>. This interpreter meant to be a temporary solution until a Just-in-Time (JIT) compiler they were working on was ready.
 
-If you are familiar with bootstrapping, then you are fine, you know what I mean. But if you are not, bootstrapping is self-starting process. In this scenario, when Mono developers were developing Just-in-Time (JIT) compiler, it obviously needed to be compiled too, but there was nothing to compile it (on the other hand, it needed to compile itself). So, they wrote mint in order to compile JIT that they were writing.
+If you are familiar with bootstrapping, then you are fine, you know what I mean. But if you are not, bootstrapping is self-starting process. In this scenario, when Mono developers were developing Just-in-Time (JIT) compiler, it obviously needed to be compiled too, but there was nothing to compile it (on the other hand, it needed to compile itself). So, they wrote <em>mint</em> in order to compile JIT that they were writing.
 
-The interpreter, mint, remained active and continued to exist alongside JIT as it was being written, until the day JIT engine was fully functional. As mint only written to serve one purpose, it never evolved or upgraded, which had brought new challenges onto the field.
+The interpreter, <em>mint</em>, remained active and continued to exist alongside JIT as it was being written, until the day JIT engine was fully functional. As <em>mint</em> only written to serve one purpose, it never evolved or upgraded, which had brought new challenges onto the field.
 
-They (Mono engineers and developers obviously) could not cope with the engineering cost, especially when <em>generics</em> were introduced by Microsoft. The interpreter, mint, could not deal with generics, because it was not up-to-date and did not have what was necessary to understand and emit code for generic methods and classes. This had led to the birth of their full static compiler of .Net code.
+They (Mono engineers and developers obviously) could not cope with the engineering cost, especially when <em>generics</em> were introduced by Microsoft. The interpreter, <em>mint</em>, could not deal with generics, because it was not up-to-date and did not have what was necessary to understand and emit code for generic methods and classes. This had led to the birth of their full static compiler of .Net code.
 
 I have mentioned generics; I hope it did move something in you by mentioning it abruptly! Something like:
 
@@ -60,20 +61,21 @@ public class Generic<T>
 }
 ```
 
-I confess that I did not understand why Mono interpreter, mint, failed to compile generics, which had led to its end of duty. I was genuinely reluctant to continue writing this article until I was satisfied and it was clear to me first before I put it here.
+I confess that I did not understand why Mono interpreter, <em>mint</em>, failed to compile generics, which had led to its end of duty. I was genuinely reluctant to continue writing this article until I was satisfied and it was clear to me first before I put it here.
 
-For a compiler or interpreter, being able to translate generic methods and classes, it must change a lot to make room for generics. This is because they touch so many parts of the code we write. The interpreter, mint was written for bootstrapping, definitely not a capable interpreter to be able to easily adapt to the new changes, yet! Even for the JIT, tremendous amount of extra work was needed, because additional IL Instructions were necessary to be implemented, in order to enable JIT to access the extra information it needed to produce code for generic methods.
+For a compiler or interpreter, being able to translate generic methods and classes, it must change a lot to make room for generics. This is because they touch so many parts of the code we write. The interpreter, <em>mint</em> was written for bootstrapping, definitely not a capable interpreter to be able to easily adapt to the new changes, yet! Even for the JIT, tremendous amount of extra work was needed, because additional IL Instructions were necessary to be implemented, in order to enable JIT to access the extra information it needed to produce code for generic methods.
 
 # Static compilation
 
-Mono continued contriving, and was trying to find a solution to handle absence of generics, and a stronger compilation technology, in my opinion.
-In 2017 they have introduced another compilation package of .Net code, static compilation. Rings the bell? I have briefly touched static compilation at the beginning of this article when I was talking about the experimental projects of bringing Mono to the WebAssembly. This was to target platforms without dynamic code generation. It is a great piece of technology especially for gaming consoles; however, it had/has issues. Because it is a static compilation, new executables has to be re-created every time the code was getting updated. 
+Mono continued contriving, and was trying to find a solution to handle absence of generics, and a stronger compilation solution, in my opinion.
 
-This was an impractical compilation tactic for gaming consoles and perhaps many other platforms. Why? Because, static compilation does not have the ability to support dynamic code generation. It compiles the whole source code into the machine code at once before the application is executed.
+In 2017 they have introduced another compilation package of .Net code, static compilation. Rings the bell? I have briefly touched this at the beginning of this article when I was talking about the experimental projects of bringing Mono to the WebAssembly. This was to target platforms without the ability of dynamic code generation. It is a great piece of technology especially for gaming consoles; however, it had/has issues. Because it is a static compilation, new executables has to be re-created every time the code was getting updated. 
+
+This was an impractical compilation tactic for gaming consoles and perhaps many other platforms. Why? Because, having only the ability to compile the code statically means that developers are unable to make changes at runtime. This is necessary in my view because during the development and testing, game developers would and should be able to make changes during runtime without having to re-compile everything.   
 
 The lack of dynamic support still was a bummer. Frankly, Mono was missing many interesting uses of .Net. This was another small sub-topic that I could not understand properly. Bringing Mono into WebAssembly was not the only project at that time. It was being used in many other projects; Such as, for the first time programmers were able to develop games for Xbox and PlayStation. The issue with the absence of dynamic capabilities was preventing game developers to adjust and tweak their code without having to re-compile the whole project.
 
-If you have heard of Continues IDE (Link), you know exactly how important the support of dynamic programming was for Mono. When Frank Krueger was building his Continues IDE he wanted to have the ability of dynamic support, Mono was not going to be an option as per the lack of dynamic support. So, he had to write his own interpreter using F# to compile the code.
+If you have heard of [Continues IDE](http://continuous.codes/){:target="_blank"}, you know exactly how important the support of dynamic programming was for Mono. When Frank Krueger was building his Continues IDE he wanted to have the ability of dynamic support, Mono was not going to be an option as per the lack of dynamic support. So, he had to write his own interpreter using F# to compile the code.
 
 There is something popped into my head as I was writing the above paragraph, I think it is important to mention it here. In relation to Mono, the interpreter was playing a big role. Why?
 
