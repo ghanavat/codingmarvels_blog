@@ -16,7 +16,7 @@
   <ol>
   {% assign sorted_comments = comments | sort: 'date' %}
   {% for comment in sorted_comments %}      
-    <li{% if comment.email == author.email %} class="byauthor" {% endif %}>
+    <li class="{{comment.id}}">
       {% include comment.html %}
     </li>    
   {% endfor %}
