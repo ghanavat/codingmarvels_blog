@@ -3,7 +3,7 @@
 {% endif %}
 
 {% if comment.url %}
-<a href="{{ comment.url }}" rel="nofollow">
+<a href="{{ comment.url }}" target="_blank" rel="nofollow">
   <img alt="Avatar for {{ comment.name | xml_escape }}" src="{{ comment.avatar }}" class="avatar avatar-64 photo" height="64" width="64">
 </a>
 {% endif %}
@@ -12,7 +12,7 @@
   <div class="comment-body">{{ comment.message | markdownify }}</div>
   <cite>
     {% if comment.url %}
-      <a href="{{ comment.url }}" rel="nofollow">{{ comment.name | xml_escape }}</a>
+      <a href="{{ comment.url }}" target="_blank" rel="nofollow">{{ comment.name | xml_escape }}</a>
     {% else %}
       {{ comment.name | xml_escape }}
     {% endif %}

@@ -4,8 +4,10 @@ name: Vincent Tam
 avatar: https://secure.gravatar.com/avatar/4980f828b9588a712cc2013ac10fd13a?s=80&d=identicon&r=pg
 url: https://vincenttam.gitlab.io/
 message: >-
-  Nonetheless, there're some drawbacks.
+  Nonetheless, there're some drawbacks:
 
-  1. There might be several "main comments", which are comments *without* a reply target under one post.  For example, you might refer to https://networkhobo.com/2017/12/30/hugo-staticman-nested-replies-and-e-mail-notifications/.
 
-  2. Jekyll-comments only works for Jekyll, whereas [Staticman](https://staticman.net) works for *any* static blog generator since PR/MR's are pushed to GitHub/GitLab repo.
+  1- There might be several "main comments", which are comments *without* a reply target under one post. For example, you might refer to https://networkhobo.com/2017/12/30/hugo-staticman-nested-replies-and-e-mail-notifications/.
+
+
+  2- Jekyll-comments only works for Jekyll, whereas [Staticman](https://staticman.net) works for *any* static blog generator since PR/MR's are pushed to GitHub/GitLab repo.
