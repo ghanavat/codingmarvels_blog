@@ -314,6 +314,11 @@ input[type="text"]{
 	border-radius: 4px;
 }
 
+textarea{
+	border: 1px solid #cccccc;
+	border-radius: 4px;
+}
+
 input{
 	width: 200px;	
 }

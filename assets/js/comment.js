@@ -56,35 +56,6 @@ $(document).ready(function(){
         document.getElementById('avatar').value = image.src
       }
 
-    // function setAvatar(image, increment) {
-    //   if (increment) {
-    //     image.currentIndex += increment;
-    //   }
-
-    //   if (image.currentIndex < image.possible.length) {
-    //     image.src = image.possible[image.currentIndex]
-    //   }
-    // }
-
-    // function buildPossibleAvatars(identity) {
-    //   var possibleAvatars = [];      
-      
-    //   if (identity.match(globalVariables.emailRegEx)) {
-    //     possibleAvatars.push('https://secure.gravatar.com/avatar/' + md5(identity) + '?s=80&d=identicon&r=pg');
-    //   }
-    //   else{
-    //     if (identity.length == 0){
-    //         possibleAvatars.push('\\assets\\imgs\\generic-avatar.png')
-    //     }
-    //     else{            
-    //         possibleAvatars.push('https://github.com/' + identity + '.png')
-    //         possibleAvatars.push('https://avatars.io/twitter/' + identity + '/medium')            
-    //     }        
-    //   }
-
-    //   return possibleAvatars;
-    // }
-
     function validateFields(){
         var requiredIds = [ 'message', 'name', 'identity'];
         var missing = requiredIds.filter(id => document.getElementById(id).value.length < 3);
