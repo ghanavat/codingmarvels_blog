@@ -1,13 +1,14 @@
 ---
 layout: post
 title:  "Compiling C# into browser - Part 1"
+author: "Saeed Ghanavat"
 date:   2020-02-12 09:00:00 +0000
 categories: [Mono, .Net]
 tags: [Mono, .Net, WebAssembly]
-commenting: open
 excerpt_separator: <!--more-->
+commenting: open
 ---
-<br>
+
 It has been quite a while since Grace Hopper and her team developed the first compiler back in 1952. She was the one who conceived an idea of developing a new programming language close to English words, which was led to the implementation of COBOL. Her work was continued on developing the compiler as a part of COBOL programme which was able to translate codes written in COBOL (as English statement) into machine code. Before, it was all done by symbol manipulators, and not many people could do that at that time. 
 
 Why did I put this here? Just to appreciate how far we have come since the first compiler was coined.
