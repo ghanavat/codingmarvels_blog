@@ -1,15 +1,11 @@
 {% if comment.avatar %}
-  <img alt="A_Avatar for {{ comment.name | xml_escape }}" src="{{ comment.avatar }}" srcset="{{ comment.avatar }}" class="avatar avatar-64 photo" height="64" width="64">
+  <img alt="A_Avatar for {{ comment.name | xml_escape }}" src="{{ comment.avatar }}" class="avatar avatar-64 photo" height="64" width="64">
 {% endif %}
 
 {% if comment.url %}
 <a href="{{ comment.url }}" rel="nofollow">
-  <img alt="Avatar for {{ comment.name | xml_escape }}" src="https://secure.gravatar.com/avatar/{{ comment.avatar }}?s=64&amp;d=retro&amp;r=pg" class="avatar avatar-64 photo" height="64" width="64">
+  <img alt="Avatar for {{ comment.name | xml_escape }}" src="{{ comment.avatar }}" class="avatar avatar-64 photo" height="64" width="64">
 </a>
-{% endif %}
-
-{% if comment.email %}
-  <img alt="Email Avatar for {{ comment.name | xml_escape }}" src="https://secure.gravatar.com/avatar/{{ comment.avatar }}?s=64&amp;d=retro&amp;r=pg" class="avatar avatar-64 photo" height="64" width="64">
 {% endif %}
 
 <blockquote id="{{ comment.id }}">

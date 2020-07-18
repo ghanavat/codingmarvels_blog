@@ -1,12 +1,10 @@
 id: 485436f6
 date: 2019-06-30T04:20:30.7642767Z
 name: Vincent Tam
-avatar: https://avatars.io/twitter/sere@live./medium
+avatar: https://secure.gravatar.com/avatar/4980f828b9588a712cc2013ac10fd13a?s=80&d=identicon&r=pg
 url: https://vincenttam.gitlab.io/
 message: >-
   Nonetheless, there're some drawbacks.
-
-
 
   1. There might be several "main comments", which are comments *without* a reply target under one post.  For example, you might refer to https://networkhobo.com/2017/12/30/hugo-staticman-nested-replies-and-e-mail-notifications/.
 

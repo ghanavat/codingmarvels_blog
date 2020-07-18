@@ -17,7 +17,7 @@ function buildPossibleAvatars(identity) {
     if (identity.indexOf('@') < 0)
       possibleAvatars.push('https://github.com/' + identity + '.png')
   
-    possibleAvatars.push('https://avatars.io/twitter/' + identity + '/medium')
+    possibleAvatars.push('https://secure.gravatar.com/avatar/twitter/' + identity + '/medium')
   
     return possibleAvatars
   }
