@@ -1,12 +1,9 @@
-{% if comment.avatar %}
-  <img alt="Avatar for {{ comment.name | xml_escape }}" src="{{ comment.avatar }}" srcset="{{ comment.avatar }}" class="avatar avatar-64 photo" height="64" width="64">
-{% else %} {% if comment.url %}
+{% if comment.url %}
 <a href="{{ comment.url }}" rel="nofollow">
-  <img alt="Avatar for {{ comment.name | xml_escape }}" src="https://www.gravatar.com/avatar/{{ comment.avatar }}?s=64&amp;d=retro&amp;r=pg" srcset="https://www.gravatar.com/avatar/{{ comment.avatar }}?s=64&amp;d=retro&amp;r=pg" class="avatar avatar-64 photo" height="64" width="64">
+  <img alt="Gravatar for {{ comment.name | xml_escape }}" src="https://secure.gravatar.com/avatar/{{ comment.gravatar }}?s=64&amp;d=retro&amp;r=pg" srcset="https://secure.gravatar.com/avatar/{{ comment.gravatar }}?s=128&amp;d=retro&amp;r=pg 2x" class="avatar avatar-64 photo" height="64" width="64">
 </a>
 {% else %}
-<img alt="Avatar for {{ comment.name | xml_escape }}" src="https://avatars.io/twitter//medium" srcset="https://avatars.io/twitter//medium" class="avatar avatar-64 photo" height="64" width="64">
-{% endif %}
+<img alt="Gravatar for {{ comment.name | xml_escape }}" src="https://secure.gravatar.com/avatar/{{ comment.gravatar }}?s=64&amp;d=retro&amp;r=pg" srcset="https://secure.gravatar.com/avatar/{{ comment.gravatar }}?s=128&amp;d=retro&amp;r=pg 2x" class="avatar avatar-64 photo" height="64" width="64">
 {% endif %}
 
 <blockquote id="{{ comment.id }}">

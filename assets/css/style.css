@@ -99,6 +99,7 @@ article .share .gplus:hover {
 .page-header {
 	/* color: #e74c3c; */
 	color: #d69d85;
+	padding: 0 2% 0;
 	/* text-shadow: 1px 1px 1px rgba(150, 150, 150, 1); */
 }
 
@@ -117,6 +118,7 @@ article .share .gplus:hover {
 }
 
 article{
+	padding: 0 2% 0;
 	margin-bottom: 40px;
 }
 
@@ -133,10 +135,6 @@ article a:hover{
 	text-transform: uppercase;
 	font-size: 14px;
 	letter-spacing: 3px;
-}
-
-article {
-	padding: 0 5% 0;
 }
 
 article.home div a, article.home pre a { color: #2c3e50; }
@@ -227,4 +225,100 @@ ul.dropdown-menu>li>a>i.fa {
 
 .about img{
 	width: 100%;
+}
+
+#comments{
+	clear: both;
+	margin-bottom: 3em;
+}
+
+#comments img.avatar {
+    margin-left: -80px;
+    position: absolute;
+}
+
+#comments li {
+    clear: both;
+	margin: 0 0 0 80px;
+	display: block;
+}
+
+#comments ol{
+	list-style-type: none;
+    margin: 0 !important;
+    padding: 0 !important;
+    padding-left: 0 !important;
+}
+
+#comment{
+	clear: both;
+}
+
+#comments blockquote{
+	min-height: 64px;
+	margin-left: 10px;
+}
+
+#comments h3{
+	line-height: 50px;	
+}
+
+.comment-body {
+    min-height: 2.4em;
+}
+
+form {
+    margin: 0 0 20px;
+}
+
+fieldset {
+    padding: 0;
+    margin: 0;
+    border: 0;
+}
+
+#commentform .control-group {
+    float: left;
+    margin-right: 1em;
+}
+
+#commentform textarea{
+	clear: both;
+    min-height: 8em;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+#commentform label > span {
+    float: right;
+}
+
+#commentform label span {
+    color: #ccc;
+    font-size: 0.85em;
+    padding-left: 1em;
+}
+
+cite {
+    font-style: normal;
+}
+
+label {
+    display: block;
+	margin-bottom: 5px;
+	font-weight: normal;
+}
+
+input[type="text"]{
+	border: 1px solid #cccccc;
+	border-radius: 4px;
+}
+
+input{
+	width: 200px;	
+}
+
+label, input, button, select, textarea {
+    font-size: 14px;
+	font-weight: normal;	
 }

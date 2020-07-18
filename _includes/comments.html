@@ -12,14 +12,16 @@
   <h3>{% if comment_count == 1 %}One response{% else %}{{ comment_count }} responses{% endif %}</h3>
   <ol>
   {% assign sorted_comments = comments | sort: 'date' %}
-  {% for comment in sorted_comments %}
+  {% for comment in sorted_comments %}      
     <li{% if comment.email == author.email %} class="byauthor" {% endif %}>
       {% include comment.html %}
-    </li>
+    </li>    
   {% endfor %}
-  </ol>
+  <li>
+    {% if page.commenting == 'open' %}
+    {% include comment-new.html %}
+    {% endif %}
+  </li>
+  </ol>  
 </div>
-{% endif %}
-{% if page.commenting == 'open' %}
-{% include comment-new.html %}
 {% endif %}
