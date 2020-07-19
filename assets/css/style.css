@@ -227,6 +227,14 @@ ul.dropdown-menu>li>a>i.fa {
 	width: 100%;
 }
 
+.status{
+	min-height: 64px;
+	margin-left: 35px;
+	clear: both;
+	width: 50%;
+	color: red;
+}
+
 #comments{
 	clear: both;
 	margin-bottom: 3em;

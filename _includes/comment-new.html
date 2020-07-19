@@ -4,32 +4,31 @@
         height="64" width="64" onerror="setAvatar(this, 1)"/>
       <blockquote>
         <div class="comment-body">
-          <textarea name="message" id="message" placeholder="Continue the discussion. (Required)" required></textarea>
+          <textarea id="message" name="Message" placeholder="Continue the discussion. (Required)" required></textarea>
         </div>
         <cite>
           <div class="control-group">
             <label for="identity">Avatar <span>(Required)</span></label>
-            <input type="text" id="identity" placeholder="email/@twitter/github" onchange="changedAvatar()">  
+            <input type="text" id="identity" name="Avatar" placeholder="email/@twitter/github" onchange="changedAvatar()" required>  
           </div>
         </cite>
         <div class="control-group">
           <label for="name">Name/alias <span>(Required, displayed)</span></label>
-          <input type="text" name="name" id="name" placeholder="Name"/>
+          <input type="text" id="name" name="Name/alias" placeholder="Name" required/>
         </div>
         <div class="control-group">
           <label for="url">Website <span>(Optional, displayed)</span></label>
           <input type="text" name="url" id="url" placeholder="https://mywebsite.com" />
         </div>
-
         <div class="control-group">
           <label>&nbsp;</label>
-          <button type="button" class="btn btn-primary" id="commentbutton" onclick="prepareCommitForm()">Leave comment</button>
-        </div>
-      </blockquote>
+          <button type="button" class="btn btn-primary" id="commentbutton" onclick="ConfirmComment()">Leave comment</button>
+        </div>        
+      </blockquote>      
       <input name="redirect" type="hidden" value="{{ site.url }}/thankyou">
       <input name="post_id" type="hidden" value="{{ slug }}">
       <input type="hidden" name="avatar" id="avatar" value="https://www.gravatar.com/avatar/00000000000000000000000000000000?d=mp&amp;f=y">
       <input name="comment-site" type="hidden" value="{{ site.url }}">      
-    </fieldset>
+    </fieldset>    
   </form>
-<div id="commentstatus" style="clear:both" class="status"></div>
+  <div id="commentstatus" class="status hidden"></div>
