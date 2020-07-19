@@ -335,3 +335,9 @@ label, input, button, select, textarea {
     font-size: 14px;
 	font-weight: normal;	
 }
+
+.photo{
+	border: 1px solid rgba(0, 0, 0, 0.2);
+	padding: 4px;
+	background-color: #fff;
+}
